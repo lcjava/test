@@ -1,0 +1,731 @@
+commit e3b630fc1f4b24f268213599c567cddb2482dfb6
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 14:11:14 2015 +0800
+
+    delete png
+
+ weibo_login.png | Bin 16128 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 weibo_login.png
+
+commit fd64367fd258b9d73dfde3aa631fb0dcd4e43894
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 14:04:26 2015 +0800
+
+    cocos2d-x
+
+ README.md                                          |   80 +-
+ callback.php                                       |   30 +
+ code/2DSoftShadow/ens2DSoftShadowNode.cpp          | 1198 +++++++
+ code/2DSoftShadow/ens2DSoftShadowNode.h            |  206 ++
+ code/2DSoftShadow/layer_2DSoftShadow.cpp           |  268 ++
+ code/2DSoftShadow/layer_2DSoftShadow.h             |   77 +
+ code/2DSoftShadow/scene_2DSoftShadow.cpp           |    9 +
+ code/2DSoftShadow/scene_2DSoftShadow.h             |   31 +
+ code/break/ensBreakNode.cpp                        |  785 +++++
+ code/break/ensBreakNode.h                          |  176 ++
+ code/break/layer_break.cpp                         |  182 ++
+ code/break/layer_break.h                           |   45 +
+ code/break/scene_break.cpp                         |    9 +
+ code/break/scene_break.h                           |   30 +
+ code/chooseDemoUI/chooseLayer.cpp                  |  187 ++
+ code/chooseDemoUI/chooseLayer.h                    |   40 +
+ code/chooseDemoUI/chooseScene.cpp                  |    9 +
+ code/chooseDemoUI/chooseScene.h                    |   29 +
+ code/colorAdjust/ensColorAdjustNode.cpp            |   66 +
+ code/colorAdjust/ensColorAdjustNode.h              |   42 +
+ code/colorAdjust/layer_colorAdjust.cpp             |  165 +
+ code/colorAdjust/layer_colorAdjust.h               |   47 +
+ code/colorAdjust/scene_colorAdjust.cpp             |    9 +
+ code/colorAdjust/scene_colorAdjust.h               |   30 +
+ code/common/ensCommon.h                            |   19 +
+ code/common/ensDefine.cpp                          |   12 +
+ code/common/ensDefine.h                            |   22 +
+ code/common/ensFunc.cpp                            |   54 +
+ code/common/ensFunc.h                              |   25 +
+ code/common/ensGLProgramWithUnifos.cpp             |  107 +
+ code/common/ensGLProgramWithUnifos.h               |   46 +
+ code/common/ensIndexVBO.cpp                        |   11 +
+ code/common/ensIndexVBO.h                          |  172 +
+ code/common/ensMath.cpp                            |  279 ++
+ code/common/ensMath.h                              |   42 +
+ code/common/ensMesh.cpp                            |    9 +
+ code/common/ensMesh.h                              |   65 +
+ code/common/ensSimpleClasses.cpp                   |   47 +
+ code/common/ensSimpleClasses.h                     |  174 ++
+ code/ghost-like/ensGhostNode.cpp                   |  255 ++
+ code/ghost-like/ensGhostNode.h                     |   86 +
+ code/ghost-like/layer_ghostlike.cpp                |   76 +
+ code/ghost-like/layer_ghostlike.h                  |   34 +
+ code/ghost-like/scene_ghostlike.cpp                |    9 +
+ code/ghost-like/scene_ghostlike.h                  |   30 +
+ code/laser/ensLaserLayer.cpp                       |  319 ++
+ code/laser/ensLaserLayer.h                         |  203 ++
+ code/laser/laserScene.cpp                          |    2 +
+ code/laser/laserScene.h                            |   21 +
+ code/lightningBolt/ensLightningBoltNode.cpp        |  690 ++++
+ code/lightningBolt/ensLightningBoltNode.h          |  171 +
+ code/lightningBolt/layer_lightningBolt.cpp         |  103 +
+ code/lightningBolt/layer_lightningBolt.h           |   44 +
+ code/lightningBolt/scene_lightningBolt.cpp         |    9 +
+ code/lightningBolt/scene_lightningBolt.h           |   30 +
+ code/normalMapped/ensNormalMappedNode.cpp          |  118 +
+ code/normalMapped/ensNormalMappedNode.h            |  102 +
+ code/normalMapped/layer_normalMapped.cpp           |  261 ++
+ code/normalMapped/layer_normalMapped.h             |   57 +
+ code/normalMapped/scene_normalMapped.cpp           |    9 +
+ code/normalMapped/scene_normalMapped.h             |   30 +
+ code/ripple/ensRippleNode.cpp                      |  251 ++
+ code/ripple/ensRippleNode.h                        |   69 +
+ code/ripple/layer_ripple.cpp                       |  158 +
+ code/ripple/layer_ripple.h                         |   52 +
+ code/ripple/scene_ripple.cpp                       |    9 +
+ code/ripple/scene_ripple.h                         |   31 +
+ .../ripple_horizontal/ensRipple_horizontalNode.cpp |  293 ++
+ code/ripple_horizontal/ensRipple_horizontalNode.h  |   62 +
+ code/ripple_horizontal/layer_ripple_horizontal.cpp |  159 +
+ code/ripple_horizontal/layer_ripple_horizontal.h   |   52 +
+ code/ripple_horizontal/scene_ripple_horizontal.cpp |    9 +
+ code/ripple_horizontal/scene_ripple_horizontal.h   |   31 +
+ code/shatter/ensShatterNode.cpp                    |  165 +
+ code/shatter/ensShatterNode.h                      |   90 +
+ code/shatter/layer_shatter.cpp                     |  142 +
+ code/shatter/layer_shatter.h                       |   45 +
+ code/shatter/scene_shatter.cpp                     |    9 +
+ code/shatter/scene_shatter.h                       |   31 +
+ code/splash/__multiSpotLightLayer.cpp              |   95 +
+ code/splash/__multiSpotLightLayer.h                |  230 ++
+ code/splash/ensSplashLayer.cpp                     |  157 +
+ code/splash/ensSplashLayer.h                       |   33 +
+ code/splash/layer_splash.cpp                       |  157 +
+ code/splash/layer_splash.h                         |   54 +
+ code/splash/scene_splash.cpp                       |   24 +
+ code/splash/scene_splash.h                         |   24 +
+ code/tail/ensTailNode.cpp                          |  866 +++++
+ code/tail/ensTailNode.h                            |  115 +
+ code/tail/layer_tail.cpp                           |  199 ++
+ code/tail/layer_tail.h                             |   50 +
+ code/tail/scene_tail.cpp                           |    9 +
+ code/tail/scene_tail.h                             |   32 +
+ code/tinyWingsTerrain/ensTinyWingsTerrainNode.cpp  |  327 ++
+ code/tinyWingsTerrain/ensTinyWingsTerrainNode.h    |   88 +
+ code/tinyWingsTerrain/layer_tinyWingsTerrain.cpp   |  229 ++
+ code/tinyWingsTerrain/layer_tinyWingsTerrain.h     |   64 +
+ code/tinyWingsTerrain/scene_tinyWingsTerrain.cpp   |    9 +
+ code/tinyWingsTerrain/scene_tinyWingsTerrain.h     |   31 +
+ config.php                                         |    6 +
+ index.php                                          |   35 +
+ resource/demoRes/HelloWorld.png                    |  Bin 0 -> 102532 bytes
+ resource/demoRes/chameleon.png                     |  Bin 0 -> 127068 bytes
+ resource/demoRes/chessPiece.png                    |  Bin 0 -> 7028 bytes
+ resource/demoRes/cigaretteBox.png                  |  Bin 0 -> 17136 bytes
+ resource/demoRes/dish.png                          |  Bin 0 -> 35130 bytes
+ resource/demoRes/fish.png                          |  Bin 0 -> 93523 bytes
+ resource/demoRes/fish2.png                         |  Bin 0 -> 51150 bytes
+ resource/demoRes/fish2_normal.png                  |  Bin 0 -> 46495 bytes
+ resource/demoRes/fish_ani.plist                    |   47 +
+ resource/demoRes/fish_frames.plist                 |  399 +++
+ resource/demoRes/fish_frames.png                   |  Bin 0 -> 2164989 bytes
+ resource/demoRes/frozen.png                        |  Bin 0 -> 1161488 bytes
+ resource/demoRes/frozen_small.png                  |  Bin 0 -> 779574 bytes
+ resource/demoRes/laserRes/light2.png               |  Bin 0 -> 3651 bytes
+ resource/demoRes/laserRes/mask.png                 |  Bin 0 -> 19289 bytes
+ resource/demoRes/laserRes/mask2.png                |  Bin 0 -> 14943 bytes
+ resource/demoRes/laserRes/noise.png                |  Bin 0 -> 101607 bytes
+ resource/demoRes/laserRes/noise2.png               |  Bin 0 -> 79842 bytes
+ resource/demoRes/light.png                         |  Bin 0 -> 1882 bytes
+ resource/demoRes/light2.png                        |  Bin 0 -> 10250 bytes
+ resource/demoRes/lightFin.png                      |  Bin 0 -> 13418 bytes
+ resource/demoRes/lightingSeg.png                   |  Bin 0 -> 36618 bytes
+ resource/demoRes/quad_dot.png                      |  Bin 0 -> 4404 bytes
+ resource/demoRes/roughPaper.png                    |  Bin 0 -> 1173079 bytes
+ resource/demoRes/scene.png                         |  Bin 0 -> 681449 bytes
+ resource/demoRes/splash/splashSpot1.png            |  Bin 0 -> 6954 bytes
+ resource/demoRes/splash/splashSpot2.png            |  Bin 0 -> 12117 bytes
+ resource/demoRes/tableCloth.png                    |  Bin 0 -> 1949214 bytes
+ resource/demoRes/water.png                         |  Bin 0 -> 5371 bytes
+ resource/psd/lightingSeg.psd                       |  Bin 0 -> 331907 bytes
+ resource/psd/splashSpot1.psd                       |  Bin 0 -> 407218 bytes
+ resource/psd/splashSpot2.psd                       |  Bin 0 -> 383924 bytes
+ resource/screenshots/2DSoftShadow.png              |  Bin 0 -> 886589 bytes
+ resource/screenshots/break.png                     |  Bin 0 -> 578579 bytes
+ resource/screenshots/colorAdjust.png               |  Bin 0 -> 160217 bytes
+ resource/screenshots/frontPage.png                 |  Bin 0 -> 177292 bytes
+ resource/screenshots/ghost-like.png                |  Bin 0 -> 684953 bytes
+ resource/screenshots/laser.png                     |  Bin 0 -> 84749 bytes
+ resource/screenshots/lightningBolt.png             |  Bin 0 -> 106226 bytes
+ resource/screenshots/normalMapped.png              |  Bin 0 -> 91547 bytes
+ resource/screenshots/ripple.png                    |  Bin 0 -> 579092 bytes
+ resource/screenshots/ripple_horizontal.png         |  Bin 0 -> 63357 bytes
+ resource/screenshots/shatter.png                   |  Bin 0 -> 122009 bytes
+ resource/screenshots/splash.png                    |  Bin 0 -> 587344 bytes
+ resource/screenshots/tail.png                      |  Bin 0 -> 86348 bytes
+ resource/screenshots/tinyWingsTerrain.png          |  Bin 0 -> 167473 bytes
+ resource/shaders/2DSoftShadow.fsh                  |   19 +
+ resource/shaders/2DSoftShadow_renderShadow.fsh     |   21 +
+ .../shaders/break_mediumpFloat_outRangeTransp.fsh  |   17 +
+ .../shaders/break_mediumpFloat_outRangeTransp.vsh  |   15 +
+ resource/shaders/colorAdjustHSL.fsh                |  102 +
+ resource/shaders/ghostlike_filterX.fsh             |   39 +
+ resource/shaders/ghostlike_filterYAndMerge.fsh     |   52 +
+ resource/shaders/laser.fsh                         |   93 +
+ resource/shaders/lightningBolt.fsh                 |   16 +
+ resource/shaders/lightningBolt.vsh                 |   15 +
+ resource/shaders/normalMapped.fsh                  |   53 +
+ resource/shaders/splash/highlight.fsh              |   25 +
+ resource/shaders/splash/metaBall.fsh               |   36 +
+ resource/shaders/tailEffect.fsh                    |   22 +
+ resource/shaders/tailEffect.vsh                    |   15 +
+ .../shaders/tinyWingsTerrain_nonlinearTexCoord.fsh |   31 +
+ resource/uiRes/button.png                          |  Bin 0 -> 1255 bytes
+ resource/uiRes/button_dn.png                       |  Bin 0 -> 1262 bytes
+ resource/uiRes/sliderProgress.png                  |  Bin 0 -> 396 bytes
+ resource/uiRes/sliderProgress_long.png             |  Bin 0 -> 3078 bytes
+ resource/uiRes/sliderThumb.png                     |  Bin 0 -> 1441 bytes
+ resource/uiRes/sliderTrack.png                     |  Bin 0 -> 539 bytes
+ resource/uiRes/sliderTrack_long.png                |  Bin 0 -> 3232 bytes
+ saetv2.ex.class.php                                | 3295 ++++++++++++++++++++
+ weibo_login.png                                    |  Bin 0 -> 16128 bytes
+ weibolist.php                                      |   48 +
+ 173 files changed, 16344 insertions(+), 1 deletion(-)
+ create mode 100644 callback.php
+ create mode 100644 code/2DSoftShadow/ens2DSoftShadowNode.cpp
+ create mode 100644 code/2DSoftShadow/ens2DSoftShadowNode.h
+ create mode 100644 code/2DSoftShadow/layer_2DSoftShadow.cpp
+ create mode 100644 code/2DSoftShadow/layer_2DSoftShadow.h
+ create mode 100644 code/2DSoftShadow/scene_2DSoftShadow.cpp
+ create mode 100644 code/2DSoftShadow/scene_2DSoftShadow.h
+ create mode 100644 code/break/ensBreakNode.cpp
+ create mode 100644 code/break/ensBreakNode.h
+ create mode 100644 code/break/layer_break.cpp
+ create mode 100644 code/break/layer_break.h
+ create mode 100644 code/break/scene_break.cpp
+ create mode 100644 code/break/scene_break.h
+ create mode 100644 code/chooseDemoUI/chooseLayer.cpp
+ create mode 100644 code/chooseDemoUI/chooseLayer.h
+ create mode 100644 code/chooseDemoUI/chooseScene.cpp
+ create mode 100644 code/chooseDemoUI/chooseScene.h
+ create mode 100644 code/colorAdjust/ensColorAdjustNode.cpp
+ create mode 100644 code/colorAdjust/ensColorAdjustNode.h
+ create mode 100644 code/colorAdjust/layer_colorAdjust.cpp
+ create mode 100644 code/colorAdjust/layer_colorAdjust.h
+ create mode 100644 code/colorAdjust/scene_colorAdjust.cpp
+ create mode 100644 code/colorAdjust/scene_colorAdjust.h
+ create mode 100644 code/common/ensCommon.h
+ create mode 100644 code/common/ensDefine.cpp
+ create mode 100644 code/common/ensDefine.h
+ create mode 100644 code/common/ensFunc.cpp
+ create mode 100644 code/common/ensFunc.h
+ create mode 100644 code/common/ensGLProgramWithUnifos.cpp
+ create mode 100644 code/common/ensGLProgramWithUnifos.h
+ create mode 100644 code/common/ensIndexVBO.cpp
+ create mode 100644 code/common/ensIndexVBO.h
+ create mode 100644 code/common/ensMath.cpp
+ create mode 100644 code/common/ensMath.h
+ create mode 100644 code/common/ensMesh.cpp
+ create mode 100644 code/common/ensMesh.h
+ create mode 100644 code/common/ensSimpleClasses.cpp
+ create mode 100644 code/common/ensSimpleClasses.h
+ create mode 100644 code/ghost-like/ensGhostNode.cpp
+ create mode 100644 code/ghost-like/ensGhostNode.h
+ create mode 100644 code/ghost-like/layer_ghostlike.cpp
+ create mode 100644 code/ghost-like/layer_ghostlike.h
+ create mode 100644 code/ghost-like/scene_ghostlike.cpp
+ create mode 100644 code/ghost-like/scene_ghostlike.h
+ create mode 100644 code/laser/ensLaserLayer.cpp
+ create mode 100644 code/laser/ensLaserLayer.h
+ create mode 100644 code/laser/laserScene.cpp
+ create mode 100644 code/laser/laserScene.h
+ create mode 100644 code/lightningBolt/ensLightningBoltNode.cpp
+ create mode 100644 code/lightningBolt/ensLightningBoltNode.h
+ create mode 100644 code/lightningBolt/layer_lightningBolt.cpp
+ create mode 100644 code/lightningBolt/layer_lightningBolt.h
+ create mode 100644 code/lightningBolt/scene_lightningBolt.cpp
+ create mode 100644 code/lightningBolt/scene_lightningBolt.h
+ create mode 100644 code/normalMapped/ensNormalMappedNode.cpp
+ create mode 100644 code/normalMapped/ensNormalMappedNode.h
+ create mode 100644 code/normalMapped/layer_normalMapped.cpp
+ create mode 100644 code/normalMapped/layer_normalMapped.h
+ create mode 100644 code/normalMapped/scene_normalMapped.cpp
+ create mode 100644 code/normalMapped/scene_normalMapped.h
+ create mode 100644 code/ripple/ensRippleNode.cpp
+ create mode 100644 code/ripple/ensRippleNode.h
+ create mode 100644 code/ripple/layer_ripple.cpp
+ create mode 100644 code/ripple/layer_ripple.h
+ create mode 100644 code/ripple/scene_ripple.cpp
+ create mode 100644 code/ripple/scene_ripple.h
+ create mode 100644 code/ripple_horizontal/ensRipple_horizontalNode.cpp
+ create mode 100644 code/ripple_horizontal/ensRipple_horizontalNode.h
+ create mode 100644 code/ripple_horizontal/layer_ripple_horizontal.cpp
+ create mode 100644 code/ripple_horizontal/layer_ripple_horizontal.h
+ create mode 100644 code/ripple_horizontal/scene_ripple_horizontal.cpp
+ create mode 100644 code/ripple_horizontal/scene_ripple_horizontal.h
+ create mode 100644 code/shatter/ensShatterNode.cpp
+ create mode 100644 code/shatter/ensShatterNode.h
+ create mode 100644 code/shatter/layer_shatter.cpp
+ create mode 100644 code/shatter/layer_shatter.h
+ create mode 100644 code/shatter/scene_shatter.cpp
+ create mode 100644 code/shatter/scene_shatter.h
+ create mode 100644 code/splash/__multiSpotLightLayer.cpp
+ create mode 100644 code/splash/__multiSpotLightLayer.h
+ create mode 100644 code/splash/ensSplashLayer.cpp
+ create mode 100644 code/splash/ensSplashLayer.h
+ create mode 100644 code/splash/layer_splash.cpp
+ create mode 100644 code/splash/layer_splash.h
+ create mode 100644 code/splash/scene_splash.cpp
+ create mode 100644 code/splash/scene_splash.h
+ create mode 100644 code/tail/ensTailNode.cpp
+ create mode 100644 code/tail/ensTailNode.h
+ create mode 100644 code/tail/layer_tail.cpp
+ create mode 100644 code/tail/layer_tail.h
+ create mode 100644 code/tail/scene_tail.cpp
+ create mode 100644 code/tail/scene_tail.h
+ create mode 100644 code/tinyWingsTerrain/ensTinyWingsTerrainNode.cpp
+ create mode 100644 code/tinyWingsTerrain/ensTinyWingsTerrainNode.h
+ create mode 100644 code/tinyWingsTerrain/layer_tinyWingsTerrain.cpp
+ create mode 100644 code/tinyWingsTerrain/layer_tinyWingsTerrain.h
+ create mode 100644 code/tinyWingsTerrain/scene_tinyWingsTerrain.cpp
+ create mode 100644 code/tinyWingsTerrain/scene_tinyWingsTerrain.h
+ create mode 100644 config.php
+ create mode 100644 index.php
+ create mode 100644 resource/demoRes/HelloWorld.png
+ create mode 100644 resource/demoRes/chameleon.png
+ create mode 100644 resource/demoRes/chessPiece.png
+ create mode 100644 resource/demoRes/cigaretteBox.png
+ create mode 100644 resource/demoRes/dish.png
+ create mode 100644 resource/demoRes/fish.png
+ create mode 100644 resource/demoRes/fish2.png
+ create mode 100644 resource/demoRes/fish2_normal.png
+ create mode 100644 resource/demoRes/fish_ani.plist
+ create mode 100644 resource/demoRes/fish_frames.plist
+ create mode 100644 resource/demoRes/fish_frames.png
+ create mode 100644 resource/demoRes/frozen.png
+ create mode 100644 resource/demoRes/frozen_small.png
+ create mode 100644 resource/demoRes/laserRes/light2.png
+ create mode 100644 resource/demoRes/laserRes/mask.png
+ create mode 100644 resource/demoRes/laserRes/mask2.png
+ create mode 100644 resource/demoRes/laserRes/noise.png
+ create mode 100644 resource/demoRes/laserRes/noise2.png
+ create mode 100644 resource/demoRes/light.png
+ create mode 100644 resource/demoRes/light2.png
+ create mode 100644 resource/demoRes/lightFin.png
+ create mode 100644 resource/demoRes/lightingSeg.png
+ create mode 100644 resource/demoRes/quad_dot.png
+ create mode 100644 resource/demoRes/roughPaper.png
+ create mode 100644 resource/demoRes/scene.png
+ create mode 100644 resource/demoRes/splash/splashSpot1.png
+ create mode 100644 resource/demoRes/splash/splashSpot2.png
+ create mode 100644 resource/demoRes/tableCloth.png
+ create mode 100644 resource/demoRes/water.png
+ create mode 100644 resource/psd/lightingSeg.psd
+ create mode 100644 resource/psd/splashSpot1.psd
+ create mode 100644 resource/psd/splashSpot2.psd
+ create mode 100644 resource/screenshots/2DSoftShadow.png
+ create mode 100644 resource/screenshots/break.png
+ create mode 100644 resource/screenshots/colorAdjust.png
+ create mode 100644 resource/screenshots/frontPage.png
+ create mode 100644 resource/screenshots/ghost-like.png
+ create mode 100644 resource/screenshots/laser.png
+ create mode 100644 resource/screenshots/lightningBolt.png
+ create mode 100644 resource/screenshots/normalMapped.png
+ create mode 100644 resource/screenshots/ripple.png
+ create mode 100644 resource/screenshots/ripple_horizontal.png
+ create mode 100644 resource/screenshots/shatter.png
+ create mode 100644 resource/screenshots/splash.png
+ create mode 100644 resource/screenshots/tail.png
+ create mode 100644 resource/screenshots/tinyWingsTerrain.png
+ create mode 100644 resource/shaders/2DSoftShadow.fsh
+ create mode 100644 resource/shaders/2DSoftShadow_renderShadow.fsh
+ create mode 100644 resource/shaders/break_mediumpFloat_outRangeTransp.fsh
+ create mode 100644 resource/shaders/break_mediumpFloat_outRangeTransp.vsh
+ create mode 100644 resource/shaders/colorAdjustHSL.fsh
+ create mode 100644 resource/shaders/ghostlike_filterX.fsh
+ create mode 100644 resource/shaders/ghostlike_filterYAndMerge.fsh
+ create mode 100644 resource/shaders/laser.fsh
+ create mode 100644 resource/shaders/lightningBolt.fsh
+ create mode 100644 resource/shaders/lightningBolt.vsh
+ create mode 100644 resource/shaders/normalMapped.fsh
+ create mode 100644 resource/shaders/splash/highlight.fsh
+ create mode 100644 resource/shaders/splash/metaBall.fsh
+ create mode 100644 resource/shaders/tailEffect.fsh
+ create mode 100644 resource/shaders/tailEffect.vsh
+ create mode 100644 resource/shaders/tinyWingsTerrain_nonlinearTexCoord.fsh
+ create mode 100644 resource/uiRes/button.png
+ create mode 100644 resource/uiRes/button_dn.png
+ create mode 100644 resource/uiRes/sliderProgress.png
+ create mode 100644 resource/uiRes/sliderProgress_long.png
+ create mode 100644 resource/uiRes/sliderThumb.png
+ create mode 100644 resource/uiRes/sliderTrack.png
+ create mode 100644 resource/uiRes/sliderTrack_long.png
+ create mode 100644 saetv2.ex.class.php
+ create mode 100644 weibo_login.png
+ create mode 100644 weibolist.php
+
+commit 0eb88a8d729bf2c4c88a858f10923f7bfb747bc5
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 14:02:27 2015 +0800
+
+    mmm,,,
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f915fb6149e9f154a5ae55a989e87fe5f84331c4
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 14:01:39 2015 +0800
+
+    llldsdfsf
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bab6780d8e3a646e4b0a42ddb77f3497dd847379
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 14:00:50 2015 +0800
+
+    sdfsdfsdfsdfsdf
+
+ README.md | 31 +------------------------------
+ 1 file changed, 1 insertion(+), 30 deletions(-)
+
+commit 5724e6b4c5797adfd29fc1253a2b6c664b8afdf4
+Author: unknown <liuchao@SHLTP-LIUCHAO.17g.com>
+Date:   Fri May 15 13:56:47 2015 +0800
+
+    okok>>>>????
+
+ README.md | 31 +++++++++++++++++++++++++++++--
+ 1 file changed, 29 insertions(+), 2 deletions(-)
+
+commit e8a0d9934063c8aa65321ee0a9fd3e0e7abd9578
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:53:57 2015 +0800
+
+    你好
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 7da449aabe1587ae3593625b20d11ebe2c8db3b8
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:50:06 2015 +0800
+
+    ds
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 62cdb89b138dbc0a2f087dd46cc42f72e1a67e33
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:36:42 2015 +0800
+
+    UPLOAD
+
+ .tags                                 |  212 +++++
+ .tags_sorted_by_file                  |  212 +++++
+ OAuth2.0 Client/auth.php              |   90 ++
+ OAuth2.0 Client/auth2.php             |   85 ++
+ OAuth2.0 Client/auth3.php             |   71 ++
+ OAuth2.0 Client/http.class.php        |   64 ++
+ OAuth2.0 Client/index.htm             |   64 ++
+ OAuth2.0 Client/style.css             |  660 ++++++++++++++
+ OAuth2.0 Server/addclient.php         |   29 +
+ OAuth2.0 Server/authorize.php         |   45 +
+ OAuth2.0 Server/client.php            |    5 +
+ OAuth2.0 Server/lib/OAuth2.inc.php    | 1560 +++++++++++++++++++++++++++++++++
+ OAuth2.0 Server/lib/PDOOAuth2.inc.php |  267 ++++++
+ OAuth2.0 Server/lib/conn.inc.php      |   12 +
+ OAuth2.0 Server/lib/func.inc.php      |   26 +
+ OAuth2.0 Server/statics/about.htm     |   62 ++
+ OAuth2.0 Server/statics/default.css   |  575 ++++++++++++
+ OAuth2.0 Server/token.php             |   15 +
+ OAuth2.0 Server/tpl/main_appreg.htm   |   72 ++
+ OAuth2.0 Server/tpl/main_auth.htm     |   73 ++
+ OAuth2.0 Server/userinfo_api.php      |   25 +
+ mysql_create_tables.sql               |   62 ++
+ 22 files changed, 4286 insertions(+)
+ create mode 100644 .tags
+ create mode 100644 .tags_sorted_by_file
+ create mode 100644 OAuth2.0 Client/auth.php
+ create mode 100644 OAuth2.0 Client/auth2.php
+ create mode 100644 OAuth2.0 Client/auth3.php
+ create mode 100644 OAuth2.0 Client/http.class.php
+ create mode 100644 OAuth2.0 Client/index.htm
+ create mode 100644 OAuth2.0 Client/style.css
+ create mode 100644 OAuth2.0 Server/addclient.php
+ create mode 100644 OAuth2.0 Server/authorize.php
+ create mode 100644 OAuth2.0 Server/client.php
+ create mode 100644 OAuth2.0 Server/lib/OAuth2.inc.php
+ create mode 100644 OAuth2.0 Server/lib/PDOOAuth2.inc.php
+ create mode 100644 OAuth2.0 Server/lib/conn.inc.php
+ create mode 100644 OAuth2.0 Server/lib/func.inc.php
+ create mode 100644 OAuth2.0 Server/statics/about.htm
+ create mode 100644 OAuth2.0 Server/statics/default.css
+ create mode 100644 OAuth2.0 Server/token.php
+ create mode 100644 OAuth2.0 Server/tpl/main_appreg.htm
+ create mode 100644 OAuth2.0 Server/tpl/main_auth.htm
+ create mode 100644 OAuth2.0 Server/userinfo_api.php
+ create mode 100644 mysql_create_tables.sql
+
+commit 1ddd635e4b1d5111f756c40f470b364ebe5edd2d
+Author: lcjava <lcjava@qq.com>
+Date:   Fri May 15 13:35:56 2015 +0800
+
+    Create README.md
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+commit f926051445de25586eb200e56a80066a9cf8c41e
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:34:15 2015 +0800
+
+    delete test
+
+ .tags                                   | 354 --------------------------------
+ .tags_sorted_by_file                    | 354 --------------------------------
+ CSChatMessage.h                         |  38 ----
+ ChatDefine.h                            |  34 ---
+ GameUtils.h                             |  64 ------
+ Makefile                                | 128 ------------
+ Packet.cpp                              |  10 -
+ Packet.h                                |  96 ---------
+ PacketDefine.h                          |  25 ---
+ PacketFactory.h                         |  31 ---
+ PacketFactoryManager.cpp                | 117 -----------
+ PacketFactoryManager.h                  |  60 ------
+ README.md                               |   1 -
+ SCChatMessage.h                         | 164 ---------------
+ ServerSocket.cpp                        |  57 -----
+ ServerSocket.h                          |  85 --------
+ Socket.cpp                              | 216 -------------------
+ Socket.h                                | 111 ----------
+ SocketAPI.cpp                           | 337 ------------------------------
+ SocketAPI.h                             | 220 --------------------
+ SocketInputStream.cpp                   | 330 -----------------------------
+ SocketInputStream.h                     |  93 ---------
+ SocketOutputStream.cpp                  | 203 ------------------
+ SocketOutputStream.h                    |  93 ---------
+ client.cpp                              |  59 ------
+ client2.cpp                             |  57 -----
+ index.txt                               |   1 -
+ main.cpp                                | 101 ---------
+ main3.cpp                               |  12 --
+ nbproject/Makefile-Debug.mk             | 126 ------------
+ nbproject/Makefile-Release.mk           | 126 ------------
+ nbproject/Makefile-impl.mk              | 133 ------------
+ nbproject/Makefile-variables.mk         |  35 ----
+ nbproject/Package-Debug.bash            |  76 -------
+ nbproject/Package-Release.bash          |  76 -------
+ nbproject/configurations.xml            | 178 ----------------
+ nbproject/private/Makefile-variables.mk |   7 -
+ nbproject/private/configurations.xml    |  72 -------
+ nbproject/private/launcher.properties   |  40 ----
+ nbproject/private/private.xml           |  11 -
+ nbproject/project.xml                   |  28 ---
+ server.cpp                              |  76 -------
+ server2.cpp                             |  97 ---------
+ 43 files changed, 4532 deletions(-)
+ delete mode 100644 .tags
+ delete mode 100644 .tags_sorted_by_file
+ delete mode 100644 CSChatMessage.h
+ delete mode 100644 ChatDefine.h
+ delete mode 100644 GameUtils.h
+ delete mode 100644 Makefile
+ delete mode 100644 Packet.cpp
+ delete mode 100644 Packet.h
+ delete mode 100644 PacketDefine.h
+ delete mode 100644 PacketFactory.h
+ delete mode 100644 PacketFactoryManager.cpp
+ delete mode 100644 PacketFactoryManager.h
+ delete mode 100644 README.md
+ delete mode 100644 SCChatMessage.h
+ delete mode 100644 ServerSocket.cpp
+ delete mode 100644 ServerSocket.h
+ delete mode 100644 Socket.cpp
+ delete mode 100644 Socket.h
+ delete mode 100644 SocketAPI.cpp
+ delete mode 100644 SocketAPI.h
+ delete mode 100644 SocketInputStream.cpp
+ delete mode 100644 SocketInputStream.h
+ delete mode 100644 SocketOutputStream.cpp
+ delete mode 100644 SocketOutputStream.h
+ delete mode 100644 client.cpp
+ delete mode 100644 client2.cpp
+ delete mode 100644 index.txt
+ delete mode 100644 main.cpp
+ delete mode 100644 main3.cpp
+ delete mode 100644 nbproject/Makefile-Debug.mk
+ delete mode 100644 nbproject/Makefile-Release.mk
+ delete mode 100644 nbproject/Makefile-impl.mk
+ delete mode 100644 nbproject/Makefile-variables.mk
+ delete mode 100644 nbproject/Package-Debug.bash
+ delete mode 100644 nbproject/Package-Release.bash
+ delete mode 100644 nbproject/configurations.xml
+ delete mode 100644 nbproject/private/Makefile-variables.mk
+ delete mode 100644 nbproject/private/configurations.xml
+ delete mode 100644 nbproject/private/launcher.properties
+ delete mode 100644 nbproject/private/private.xml
+ delete mode 100644 nbproject/project.xml
+ delete mode 100644 server.cpp
+ delete mode 100644 server2.cpp
+
+commit 312df7cb8b433b4d643a38c3565d8b58a3d30b21
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:29:28 2015 +0800
+
+    git commit
+
+ .tags                                   | 354 ++++++++++++++++++++++++++++++++
+ .tags_sorted_by_file                    | 354 ++++++++++++++++++++++++++++++++
+ CSChatMessage.h                         |  38 ++++
+ ChatDefine.h                            |  34 +++
+ GameUtils.h                             |  64 ++++++
+ Makefile                                | 128 ++++++++++++
+ Packet.cpp                              |  10 +
+ Packet.h                                |  96 +++++++++
+ PacketDefine.h                          |  25 +++
+ PacketFactory.h                         |  31 +++
+ PacketFactoryManager.cpp                | 117 +++++++++++
+ PacketFactoryManager.h                  |  60 ++++++
+ SCChatMessage.h                         | 164 +++++++++++++++
+ ServerSocket.cpp                        |  57 +++++
+ ServerSocket.h                          |  85 ++++++++
+ Socket.cpp                              | 216 +++++++++++++++++++
+ Socket.h                                | 111 ++++++++++
+ SocketAPI.cpp                           | 337 ++++++++++++++++++++++++++++++
+ SocketAPI.h                             | 220 ++++++++++++++++++++
+ SocketInputStream.cpp                   | 330 +++++++++++++++++++++++++++++
+ SocketInputStream.h                     |  93 +++++++++
+ SocketOutputStream.cpp                  | 203 ++++++++++++++++++
+ SocketOutputStream.h                    |  93 +++++++++
+ client.cpp                              |  59 ++++++
+ client2.cpp                             |  57 +++++
+ main.cpp                                | 101 +++++++++
+ main3.cpp                               |  12 ++
+ nbproject/Makefile-Debug.mk             | 126 ++++++++++++
+ nbproject/Makefile-Release.mk           | 126 ++++++++++++
+ nbproject/Makefile-impl.mk              | 133 ++++++++++++
+ nbproject/Makefile-variables.mk         |  35 ++++
+ nbproject/Package-Debug.bash            |  76 +++++++
+ nbproject/Package-Release.bash          |  76 +++++++
+ nbproject/configurations.xml            | 178 ++++++++++++++++
+ nbproject/private/Makefile-variables.mk |   7 +
+ nbproject/private/configurations.xml    |  72 +++++++
+ nbproject/private/launcher.properties   |  40 ++++
+ nbproject/private/private.xml           |  11 +
+ nbproject/project.xml                   |  28 +++
+ server.cpp                              |  76 +++++++
+ server2.cpp                             |  97 +++++++++
+ 41 files changed, 4530 insertions(+)
+ create mode 100644 .tags
+ create mode 100644 .tags_sorted_by_file
+ create mode 100644 CSChatMessage.h
+ create mode 100644 ChatDefine.h
+ create mode 100644 GameUtils.h
+ create mode 100644 Makefile
+ create mode 100644 Packet.cpp
+ create mode 100644 Packet.h
+ create mode 100644 PacketDefine.h
+ create mode 100644 PacketFactory.h
+ create mode 100644 PacketFactoryManager.cpp
+ create mode 100644 PacketFactoryManager.h
+ create mode 100644 SCChatMessage.h
+ create mode 100644 ServerSocket.cpp
+ create mode 100644 ServerSocket.h
+ create mode 100644 Socket.cpp
+ create mode 100644 Socket.h
+ create mode 100644 SocketAPI.cpp
+ create mode 100644 SocketAPI.h
+ create mode 100644 SocketInputStream.cpp
+ create mode 100644 SocketInputStream.h
+ create mode 100644 SocketOutputStream.cpp
+ create mode 100644 SocketOutputStream.h
+ create mode 100644 client.cpp
+ create mode 100644 client2.cpp
+ create mode 100644 main.cpp
+ create mode 100644 main3.cpp
+ create mode 100644 nbproject/Makefile-Debug.mk
+ create mode 100644 nbproject/Makefile-Release.mk
+ create mode 100644 nbproject/Makefile-impl.mk
+ create mode 100644 nbproject/Makefile-variables.mk
+ create mode 100644 nbproject/Package-Debug.bash
+ create mode 100644 nbproject/Package-Release.bash
+ create mode 100644 nbproject/configurations.xml
+ create mode 100644 nbproject/private/Makefile-variables.mk
+ create mode 100644 nbproject/private/configurations.xml
+ create mode 100644 nbproject/private/launcher.properties
+ create mode 100644 nbproject/private/private.xml
+ create mode 100644 nbproject/project.xml
+ create mode 100644 server.cpp
+ create mode 100644 server2.cpp
+
+commit 461361615b3406d60adff669b726d8c9daad708e
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:27:19 2015 +0800
+
+    test ok?
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 28db51153f6e6b5cb19a1d60e434cc702e3ff664
+Author: lcjava <lcjava@github.com>
+Date:   Fri May 15 13:24:53 2015 +0800
+
+    test
+
+ README.md | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+commit b15ca1524cf63c9ff51402cb769ee688d4bf6884
+Merge: 02f5e42 295b403
+Author: unknown <liuchao@SHLTP-LIUCHAO.17g.com>
+Date:   Fri May 15 13:17:56 2015 +0800
+
+    Merge branch 'master' of https://github.com/lcjava/test
+    
+    Conflicts:
+    	README.md
+
+commit 295b40371d17fe247df6b7b612b38a277e14e8d1
+Author: lcjava <lcjava@qq.com>
+Date:   Fri May 15 13:11:44 2015 +0800
+
+    Initial commit
+
+ .gitignore | 28 ++++++++++++++++++++++++++++
+ README.md  |  2 ++
+ 2 files changed, 30 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+
+commit 02f5e425228324a53969872385a1332b4f85b9c0
+Author: unknown <liuchao@SHLTP-LIUCHAO.17g.com>
+Date:   Fri May 15 13:00:16 2015 +0800
+
+    test okokok
+
+ index.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.txt
+
+commit 17f0c5ed2425c0037cc706c608209308178fc968
+Author: lcjava <lcjava@qq.com>
+Date:   Fri May 15 12:55:38 2015 +0800
+
+    Update README.md
+
+ README.md | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit fc655da575ea5336874f2ba8f8b742e337466d32
+Author: lcjava <lcjava@qq.com>
+Date:   Fri May 15 12:53:49 2015 +0800
+
+    Create README.md
+
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
