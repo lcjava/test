@@ -1,0 +1,354 @@
+CN_VICKY__CSCHATMESSAGE_H	CSChatMessage.h	31;"	d
+CHAT_TYPE_CHANNEL	ChatDefine.h	/^    CHAT_TYPE_CHANNEL,                                                          \/\/自建聊天频道消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_GUILD	ChatDefine.h	/^    CHAT_TYPE_GUILD,                                                            \/\/帮派消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_INVALID	ChatDefine.h	/^    CHAT_TYPE_INVALID = -1,$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_MENPAI	ChatDefine.h	/^    CHAT_TYPE_MENPAI,                                                           \/\/门派消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_NORMAL	ChatDefine.h	/^    CHAT_TYPE_NORMAL = 0,                                                       \/\/普通说话消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_NUMBER	ChatDefine.h	/^    CHAT_TYPE_NUMBER                                                            \/\/聊天类型的最大值$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_SCENE	ChatDefine.h	/^    CHAT_TYPE_SCENE,                                                            \/\/场景消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_SELF	ChatDefine.h	/^    CHAT_TYPE_SELF,                                                             \/\/仅客户端使用的消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_SYSTEM	ChatDefine.h	/^    CHAT_TYPE_SYSTEM,                                                           \/\/系统消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_TEAM	ChatDefine.h	/^    CHAT_TYPE_TEAM,                                                             \/\/队聊消息$/;"	e	enum:ENUM_CHAT_TYPE
+CHAT_TYPE_TELL	ChatDefine.h	/^    CHAT_TYPE_TELL,                                                             \/\/私聊消息$/;"	e	enum:ENUM_CHAT_TYPE
+CN_VICKY__CHATDEFINE_H	ChatDefine.h	10;"	d
+ENUM_CHAT_TYPE	ChatDefine.h	/^enum ENUM_CHAT_TYPE {$/;"	g
+MAX_CHARACTER_NAME	ChatDefine.h	13;"	d
+MAX_CHAT_SIZE	ChatDefine.h	12;"	d
+AutoLock_T	GameUtils.h	/^    AutoLock_T(MyLock& rLock) {$/;"	f	class:AutoLock_T
+AutoLock_T	GameUtils.h	/^class AutoLock_T {$/;"	c
+CN_VICKY__GAMEUTILS_H	GameUtils.h	10;"	d
+Lock	GameUtils.h	/^    void Lock() {$/;"	f	class:MyLock
+MyLock	GameUtils.h	/^    MyLock() {$/;"	f	class:MyLock
+MyLock	GameUtils.h	/^class MyLock {$/;"	c
+Unlock	GameUtils.h	/^    void Unlock() {$/;"	f	class:MyLock
+__HALF_PI	GameUtils.h	16;"	d
+__PI	GameUtils.h	15;"	d
+__QUARTER_PI	GameUtils.h	17;"	d
+m_Mutex	GameUtils.h	/^    pthread_mutex_t m_Mutex;$/;"	m	class:MyLock
+m_pLock	GameUtils.h	/^    MyLock* m_pLock;$/;"	m	class:AutoLock_T
+~AutoLock_T	GameUtils.h	/^    ~AutoLock_T() {$/;"	f	class:AutoLock_T
+~MyLock	GameUtils.h	/^    ~MyLock() {$/;"	f	class:MyLock
+Packet	Packet.cpp	/^Packet::Packet() {$/;"	f	class:Packet
+~Packet	Packet.cpp	/^Packet::~Packet() {$/;"	f	class:Packet
+BYTE	Packet.h	/^typedef unsigned char BYTE;$/;"	t
+CN_VICKY__PACKET_H	Packet.h	10;"	d
+CheckPacket	Packet.h	/^    virtual bool CheckPacket() {$/;"	f	class:Packet
+CleanUp	Packet.h	/^    virtual void CleanUp() {$/;"	f	class:Packet
+GET_PACKET_INDEX	Packet.h	18;"	d
+GET_PACKET_LEN	Packet.h	20;"	d
+GetPacketIndex	Packet.h	/^    BYTE GetPacketIndex() const {$/;"	f	class:Packet
+GetPacketStatus	Packet.h	/^    BYTE GetPacketStatus() const {$/;"	f	class:Packet
+PACKET_EXE	Packet.h	/^enum PACKET_EXE {$/;"	g
+PACKET_EXE_BREAK	Packet.h	/^    PACKET_EXE_BREAK,$/;"	e	enum:PACKET_EXE
+PACKET_EXE_CONTINUE	Packet.h	/^    PACKET_EXE_CONTINUE,$/;"	e	enum:PACKET_EXE
+PACKET_EXE_ERROR	Packet.h	/^    PACKET_EXE_ERROR = 0,$/;"	e	enum:PACKET_EXE
+PACKET_EXE_NOTREMOVE	Packet.h	/^    PACKET_EXE_NOTREMOVE,$/;"	e	enum:PACKET_EXE
+PACKET_EXE_NOTREMOVE_ERROR	Packet.h	/^    PACKET_EXE_NOTREMOVE_ERROR,$/;"	e	enum:PACKET_EXE
+PACKET_HEADER_SIZE	Packet.h	26;"	d
+PACK_COMPART	Packet.h	28;"	d
+PACK_COMPART_SIZE	Packet.h	29;"	d
+Packet	Packet.h	/^class Packet {$/;"	c
+PacketID_t	Packet.h	/^typedef unsigned short PacketID_t;$/;"	t
+SET_PACKET_INDEX	Packet.h	19;"	d
+SET_PACKET_LEN	Packet.h	21;"	d
+SetPacketIndex	Packet.h	/^    void SetPacketIndex(BYTE Index) {$/;"	f	class:Packet
+SetPacketStatus	Packet.h	/^    void SetPacketStatus(BYTE Status) {$/;"	f	class:Packet
+m_Index	Packet.h	/^    BYTE m_Index;$/;"	m	class:Packet
+m_Status	Packet.h	/^    BYTE m_Status;$/;"	m	class:Packet
+CN_VICKY__PACKETDEFINE_H	PacketDefine.h	10;"	d
+PACKET_CS_CHAT	PacketDefine.h	/^        PACKET_CS_CHAT,                                                         \/\/聊天$/;"	e	enum:packet::PACKET_DEF
+PACKET_DEF	PacketDefine.h	/^    enum PACKET_DEF {$/;"	g	namespace:packet
+PACKET_MAX	PacketDefine.h	/^        PACKET_MAX                                                              \/\/消息数量$/;"	e	enum:packet::PACKET_DEF
+PACKET_NONE	PacketDefine.h	/^        PACKET_NONE = 0,                                                        \/\/0，空$/;"	e	enum:packet::PACKET_DEF
+PACKET_SC_CHAT	PacketDefine.h	/^        PACKET_SC_CHAT,                                                         \/\/聊天$/;"	e	enum:packet::PACKET_DEF
+packet	PacketDefine.h	/^namespace packet {$/;"	n
+CN_VICKY__PACKETFACTORY_H	PacketFactory.h	10;"	d
+PacketFactory	PacketFactory.h	/^class PacketFactory {$/;"	c
+~PacketFactory	PacketFactory.h	/^    virtual ~PacketFactory() {$/;"	f	class:PacketFactory
+CreatePacket	PacketFactoryManager.cpp	/^Packet* PacketFactoryManager::CreatePacket(PacketID_t packetID) {$/;"	f	class:PacketFactoryManager
+GetPacketMaxSize	PacketFactoryManager.cpp	/^unsigned int PacketFactoryManager::GetPacketMaxSize(PacketID_t packetID) {$/;"	f	class:PacketFactoryManager
+Init	PacketFactoryManager.cpp	/^bool PacketFactoryManager::Init() {$/;"	f	class:PacketFactoryManager
+PacketFactoryManager	PacketFactoryManager.cpp	/^PacketFactoryManager::PacketFactoryManager() {$/;"	f	class:PacketFactoryManager
+RemovePacket	PacketFactoryManager.cpp	/^void PacketFactoryManager::RemovePacket(Packet* pPacket) {$/;"	f	class:PacketFactoryManager
+g_pPacketFactoryManager	PacketFactoryManager.cpp	/^PacketFactoryManager* g_pPacketFactoryManager = NULL;$/;"	v
+~PacketFactoryManager	PacketFactoryManager.cpp	/^PacketFactoryManager::~PacketFactoryManager() {$/;"	f	class:PacketFactoryManager
+CN_VICKY__PACKETFACTORYMANAGER_H	PacketFactoryManager.h	10;"	d
+Lock	PacketFactoryManager.h	/^    void Lock() {$/;"	f	class:PacketFactoryManager
+PacketFactoryManager	PacketFactoryManager.h	/^class PacketFactoryManager {$/;"	c
+Unlock	PacketFactoryManager.h	/^    void Unlock() {$/;"	f	class:PacketFactoryManager
+m_Factories	PacketFactoryManager.h	/^    PacketFactory ** m_Factories;$/;"	m	class:PacketFactoryManager
+m_Lock	PacketFactoryManager.h	/^    MyLock m_Lock;$/;"	m	class:PacketFactoryManager
+m_Size	PacketFactoryManager.h	/^    unsigned short m_Size;$/;"	m	class:PacketFactoryManager
+m_pPacketAllocCount	PacketFactoryManager.h	/^    unsigned int* m_pPacketAllocCount;$/;"	m	class:PacketFactoryManager
+CN_VICKY__SCcharTMESSAGE_H	SCChatMessage.h	10;"	d
+CreatePacket	SCChatMessage.h	/^        Packet* CreatePacket() {$/;"	f	class:packet::SCChatFactory
+GetChatType	SCChatMessage.h	/^        BYTE GetChatType() {$/;"	f	class:packet::SCChatMessage
+GetContex	SCChatMessage.h	/^        char* GetContex() {$/;"	f	class:packet::SCChatMessage
+GetContexSize	SCChatMessage.h	/^        BYTE GetContexSize() {$/;"	f	class:packet::SCChatMessage
+GetPacketID	SCChatMessage.h	/^        PacketID_t GetPacketID()const {$/;"	f	class:packet::SCChatFactory
+GetPacketID	SCChatMessage.h	/^        virtual PacketID_t GetPacketID()const {$/;"	f	class:packet::SCChatMessage
+GetPacketMaxSize	SCChatMessage.h	/^        UINT GetPacketMaxSize()const {$/;"	f	class:packet::SCChatFactory
+GetPacketSize	SCChatMessage.h	/^        virtual unsigned int GetPacketSize()const {$/;"	f	class:packet::SCChatMessage
+GetSourName	SCChatMessage.h	/^        char* GetSourName() {$/;"	f	class:packet::SCChatMessage
+GetSourNameSize	SCChatMessage.h	/^        BYTE GetSourNameSize() {$/;"	f	class:packet::SCChatMessage
+Reset	SCChatMessage.h	/^        void Reset() {$/;"	f	class:packet::SCChatMessage
+SCChatFactory	SCChatMessage.h	/^    class SCChatFactory : public PacketFactory {$/;"	c	namespace:packet
+SCChatHandler	SCChatMessage.h	/^    class SCChatHandler {$/;"	c	namespace:packet
+SCChatMessage	SCChatMessage.h	/^        SCChatMessage() {$/;"	f	class:packet::SCChatMessage
+SCChatMessage	SCChatMessage.h	/^    class SCChatMessage : public Packet {$/;"	c	namespace:packet
+SetChatType	SCChatMessage.h	/^        void SetChatType(BYTE bType) {$/;"	f	class:packet::SCChatMessage
+SetContex	SCChatMessage.h	/^        void SetContex(char* pContex) {$/;"	f	class:packet::SCChatMessage
+SetContexSize	SCChatMessage.h	/^        void SetContexSize(BYTE bSize) {$/;"	f	class:packet::SCChatMessage
+SetSourName	SCChatMessage.h	/^        void SetSourName(const char* pSourName) {$/;"	f	class:packet::SCChatMessage
+SetSourNameSize	SCChatMessage.h	/^        void SetSourNameSize(BYTE bSize) {$/;"	f	class:packet::SCChatMessage
+m_ChatType	SCChatMessage.h	/^        BYTE m_ChatType; \/\/聊天消息类型 enum CGChat::CHAT_TYPE$/;"	m	class:packet::SCChatMessage
+m_Contex	SCChatMessage.h	/^        char m_Contex[MAX_CHAT_SIZE];$/;"	m	class:packet::SCChatMessage
+m_ContexSize	SCChatMessage.h	/^        BYTE m_ContexSize;$/;"	m	class:packet::SCChatMessage
+m_SourName	SCChatMessage.h	/^        char m_SourName[MAX_charACTER_NAME];$/;"	m	class:packet::SCChatMessage
+m_SourNameSize	SCChatMessage.h	/^        BYTE m_SourNameSize;$/;"	m	class:packet::SCChatMessage
+packet	SCChatMessage.h	/^namespace packet {$/;"	n
+~SCChatMessage	SCChatMessage.h	/^        virtual ~SCChatMessage() {$/;"	f	class:packet::SCChatMessage
+KEY_MAC	ServerSocket.cpp	6;"	d	file:
+ServerSocket	ServerSocket.cpp	/^ServerSocket::ServerSocket(unsigned int port, unsigned int backlog) {$/;"	f	class:ServerSocket
+accept	ServerSocket.cpp	/^bool ServerSocket::accept(Socket* socket) {$/;"	f	class:ServerSocket
+close	ServerSocket.cpp	/^void ServerSocket::close() {$/;"	f	class:ServerSocket
+~ServerSocket	ServerSocket.cpp	/^ServerSocket::~ServerSocket() {$/;"	f	class:ServerSocket
+CN_VICKY__SERVERSOCKET_H	ServerSocket.h	10;"	d
+ServerSocket	ServerSocket.h	/^class ServerSocket {$/;"	c
+getLinger	ServerSocket.h	/^    unsigned int getLinger() {$/;"	f	class:ServerSocket
+getReceiveBufferSize	ServerSocket.h	/^    unsigned int getReceiveBufferSize() const {$/;"	f	class:ServerSocket
+getSOCKET	ServerSocket.h	/^    SOCKET getSOCKET() {$/;"	f	class:ServerSocket
+getSendBufferSize	ServerSocket.h	/^    unsigned int getSendBufferSize() const {$/;"	f	class:ServerSocket
+isNonBlocking	ServerSocket.h	/^    bool isNonBlocking() const {$/;"	f	class:ServerSocket
+m_Socket	ServerSocket.h	/^    Socket* m_Socket;$/;"	m	class:ServerSocket
+setLinger	ServerSocket.h	/^    void setLinger(unsigned int lingertime) {$/;"	f	class:ServerSocket
+setNonBlocking	ServerSocket.h	/^    void setNonBlocking(bool on = true) {$/;"	f	class:ServerSocket
+setReceiveBufferSize	ServerSocket.h	/^    void setReceiveBufferSize(unsigned int size) {$/;"	f	class:ServerSocket
+setSendBufferSize	ServerSocket.h	/^    void setSendBufferSize(unsigned int size) {$/;"	f	class:ServerSocket
+Socket	Socket.cpp	/^Socket::Socket() {$/;"	f	class:Socket
+Socket	Socket.cpp	/^Socket::Socket(const char* host, unsigned int port) {$/;"	f	class:Socket
+accept	Socket.cpp	/^SOCKET Socket::accept(sockaddr* addr, unsigned int* addrlen) {$/;"	f	class:Socket
+available	Socket.cpp	/^unsigned int Socket::available() const {$/;"	f	class:Socket
+bind	Socket.cpp	/^bool Socket::bind() {$/;"	f	class:Socket
+bind	Socket.cpp	/^bool Socket::bind(unsigned int port) {$/;"	f	class:Socket
+close	Socket.cpp	/^void Socket::close() {$/;"	f	class:Socket
+connect	Socket.cpp	/^bool Socket::connect() {$/;"	f	class:Socket
+connect	Socket.cpp	/^bool Socket::connect(const char* host, unsigned int port) {$/;"	f	class:Socket
+create	Socket.cpp	/^bool Socket::create() {$/;"	f	class:Socket
+getHostIP	Socket.cpp	/^IP_t Socket::getHostIP() const {$/;"	f	class:Socket
+getLinger	Socket.cpp	/^unsigned int Socket::getLinger() const {$/;"	f	class:Socket
+getPort	Socket.cpp	/^unsigned int Socket::getPort() const {$/;"	f	class:Socket
+getReceiveBufferSize	Socket.cpp	/^unsigned int Socket::getReceiveBufferSize() const {$/;"	f	class:Socket
+getSOCKET	Socket.cpp	/^SOCKET Socket::getSOCKET() const {$/;"	f	class:Socket
+getSendBufferSize	Socket.cpp	/^unsigned int Socket::getSendBufferSize() const {$/;"	f	class:Socket
+getSockError	Socket.cpp	/^unsigned int Socket::getSockError() const {$/;"	f	class:Socket
+isNonBlocking	Socket.cpp	/^bool Socket::isNonBlocking() const {$/;"	f	class:Socket
+isReuseAddr	Socket.cpp	/^bool Socket::isReuseAddr() const {$/;"	f	class:Socket
+isSockError	Socket.cpp	/^bool Socket::isSockError() const {$/;"	f	class:Socket
+isValid	Socket.cpp	/^bool Socket::isValid() const {$/;"	f	class:Socket
+listen	Socket.cpp	/^bool Socket::listen(int backlog) {$/;"	f	class:Socket
+receive	Socket.cpp	/^unsigned int Socket::receive(void* buf, unsigned int len, unsigned int flags) {$/;"	f	class:Socket
+reconnect	Socket.cpp	/^bool Socket::reconnect(const char* host, unsigned int port) {$/;"	f	class:Socket
+send	Socket.cpp	/^unsigned int Socket::send(const void* buf, unsigned int len, unsigned int flags) {$/;"	f	class:Socket
+setLinger	Socket.cpp	/^bool Socket::setLinger(unsigned int lingertime) {$/;"	f	class:Socket
+setNonBlocking	Socket.cpp	/^bool Socket::setNonBlocking(bool on) {$/;"	f	class:Socket
+setReceiveBufferSize	Socket.cpp	/^bool Socket::setReceiveBufferSize(unsigned int size) {$/;"	f	class:Socket
+setReuseAddr	Socket.cpp	/^bool Socket::setReuseAddr(bool on) {$/;"	f	class:Socket
+setSendBufferSize	Socket.cpp	/^bool Socket::setSendBufferSize(unsigned int size) {$/;"	f	class:Socket
+~Socket	Socket.cpp	/^Socket::~Socket() {$/;"	f	class:Socket
+CN_VICKY__SOCKET_H	Socket.h	10;"	d
+IP_SIZE	Socket.h	/^const int IP_SIZE = 24;$/;"	v
+IP_t	Socket.h	/^typedef unsigned long IP_t;$/;"	t
+Socket	Socket.h	/^class Socket {$/;"	c
+m_Host	Socket.h	/^    char m_Host[IP_SIZE];$/;"	m	class:Socket
+m_Port	Socket.h	/^    unsigned int m_Port;$/;"	m	class:Socket
+m_SockAddr	Socket.h	/^    SOCKADDR_IN m_SockAddr;$/;"	m	class:Socket
+m_SocketID	Socket.h	/^    SOCKET m_SocketID;$/;"	m	class:Socket
+Error	SocketAPI.cpp	/^char Error[256];$/;"	v
+accept_ex	SocketAPI.cpp	/^SOCKET SocketAPI::accept_ex(SOCKET s, struct sockaddr* addr, unsigned int* addrlen) {$/;"	f	class:SocketAPI
+availablesocket_ex	SocketAPI.cpp	/^unsigned int SocketAPI::availablesocket_ex(SOCKET s) {$/;"	f	class:SocketAPI
+bind_ex	SocketAPI.cpp	/^bool SocketAPI::bind_ex(SOCKET s, const struct sockaddr* addr, unsigned int addrlen) {$/;"	f	class:SocketAPI
+closesocket_ex	SocketAPI.cpp	/^bool SocketAPI::closesocket_ex(SOCKET s) {$/;"	f	class:SocketAPI
+connect_ex	SocketAPI.cpp	/^bool SocketAPI::connect_ex(SOCKET s, const struct sockaddr * addr, unsigned int addrlen) {$/;"	f	class:SocketAPI
+getsocketnonblocking_ex	SocketAPI.cpp	/^bool SocketAPI::getsocketnonblocking_ex(SOCKET s) {$/;"	f	class:SocketAPI
+getsockopt_ex	SocketAPI.cpp	/^bool SocketAPI::getsockopt_ex(SOCKET s, int level, int optname, void* optval, unsigned int* optlen) {$/;"	f	class:SocketAPI
+getsockopt_ex2	SocketAPI.cpp	/^unsigned int SocketAPI::getsockopt_ex2(SOCKET s, int level, int optname, void* optval, unsigned int* optlen) {$/;"	f	class:SocketAPI
+ioctlsocket_ex	SocketAPI.cpp	/^bool SocketAPI::ioctlsocket_ex(SOCKET s, long cmd, unsigned long* argp) {$/;"	f	class:SocketAPI
+listen_ex	SocketAPI.cpp	/^bool SocketAPI::listen_ex(SOCKET s, unsigned int backlog) {$/;"	f	class:SocketAPI
+recv_ex	SocketAPI.cpp	/^unsigned int SocketAPI::recv_ex(SOCKET s, void* buf, unsigned int len, unsigned int flags) {$/;"	f	class:SocketAPI
+recvfrom_ex	SocketAPI.cpp	/^unsigned int SocketAPI::recvfrom_ex(SOCKET s, void* buf, unsigned int len, unsigned int flags, struct sockaddr* from, unsigned int* fromlen) {$/;"	f	class:SocketAPI
+select_ex	SocketAPI.cpp	/^int SocketAPI::select_ex(int maxfdp1, fd_set* readset, fd_set* writeset, fd_set* exceptset, struct timeval* timeout) {$/;"	f	class:SocketAPI
+send_ex	SocketAPI.cpp	/^unsigned int SocketAPI::send_ex(SOCKET s, const void* buf, unsigned int len, unsigned int flags) {$/;"	f	class:SocketAPI
+sendto_ex	SocketAPI.cpp	/^unsigned int SocketAPI::sendto_ex(SOCKET s, const void* buf, unsigned int len, unsigned int flags, const struct sockaddr* to, int tolen) {$/;"	f	class:SocketAPI
+setsocketnonblocking_ex	SocketAPI.cpp	/^bool SocketAPI::setsocketnonblocking_ex(SOCKET s, bool on) {$/;"	f	class:SocketAPI
+setsockopt_ex	SocketAPI.cpp	/^bool SocketAPI::setsockopt_ex(SOCKET s, int level, int optname, const void* optval, unsigned int optlen) {$/;"	f	class:SocketAPI
+shutdown_ex	SocketAPI.cpp	/^bool SocketAPI::shutdown_ex(SOCKET s, unsigned int how) {$/;"	f	class:SocketAPI
+socket_ex	SocketAPI.cpp	/^SOCKET SocketAPI::socket_ex(int domain, int type, int protocol) {$/;"	f	class:SocketAPI
+CN_VICKY__SOCKETAPI_H	SocketAPI.h	10;"	d
+INVALID_SOCKET	SocketAPI.h	22;"	d
+SOCKADDR	SocketAPI.h	/^typedef struct sockaddr SOCKADDR;$/;"	t	typeref:struct:sockaddr
+SOCKADDR_IN	SocketAPI.h	/^typedef struct sockaddr_in SOCKADDR_IN;$/;"	t	typeref:struct:sockaddr_in
+SOCKET	SocketAPI.h	/^typedef int SOCKET;$/;"	t
+SOCKET_ERROR	SocketAPI.h	23;"	d
+SOCKET_ERROR_WOULDBLOCK	SocketAPI.h	/^static const int SOCKET_ERROR_WOULDBLOCK = -100;$/;"	v
+SocketAPI	SocketAPI.h	/^namespace SocketAPI {$/;"	n
+_ESIZE	SocketAPI.h	19;"	d
+szSOCKADDR_IN	SocketAPI.h	/^static const unsigned int szSOCKADDR_IN = sizeof (SOCKADDR_IN);$/;"	v
+CleanUp	SocketInputStream.cpp	/^void SocketInputStream::CleanUp() {$/;"	f	class:SocketInputStream
+Fill	SocketInputStream.cpp	/^unsigned int SocketInputStream::Fill() {$/;"	f	class:SocketInputStream
+Find	SocketInputStream.cpp	/^bool SocketInputStream::Find(char* buf) {$/;"	f	class:SocketInputStream
+Initsize	SocketInputStream.cpp	/^void SocketInputStream::Initsize() {$/;"	f	class:SocketInputStream
+Length	SocketInputStream.cpp	/^unsigned int SocketInputStream::Length() const {$/;"	f	class:SocketInputStream
+Peek	SocketInputStream.cpp	/^bool SocketInputStream::Peek(char* buf, unsigned int len) {$/;"	f	class:SocketInputStream
+Read	SocketInputStream.cpp	/^unsigned int SocketInputStream::Read(char* buf, unsigned int len) {$/;"	f	class:SocketInputStream
+ReadPacket	SocketInputStream.cpp	/^bool SocketInputStream::ReadPacket(Packet* p) {$/;"	f	class:SocketInputStream
+Resize	SocketInputStream.cpp	/^bool SocketInputStream::Resize(int size) {$/;"	f	class:SocketInputStream
+Skip	SocketInputStream.cpp	/^bool SocketInputStream::Skip(unsigned int len) {$/;"	f	class:SocketInputStream
+SocketInputStream	SocketInputStream.cpp	/^SocketInputStream::SocketInputStream(Socket* sock, unsigned int BufferSize, unsigned int MaxBufferSize) {$/;"	f	class:SocketInputStream
+~SocketInputStream	SocketInputStream.cpp	/^SocketInputStream::~SocketInputStream() {$/;"	f	class:SocketInputStream
+CN_VICKY__SOCKETINPUTSTREAM_H	SocketInputStream.h	10;"	d
+Capacity	SocketInputStream.h	/^    unsigned int Capacity()const {$/;"	f	class:SocketInputStream
+DEFAULTSOCKETINPUTBUFFERSIZE	SocketInputStream.h	15;"	d
+DISCONNECTSOCKETINPUTSIZE	SocketInputStream.h	17;"	d
+GetBuff	SocketInputStream.h	/^    char* GetBuff() {$/;"	f	class:SocketInputStream
+GetBuffLen	SocketInputStream.h	/^    unsigned int GetBuffLen() {$/;"	f	class:SocketInputStream
+GetHead	SocketInputStream.h	/^    unsigned int GetHead() {$/;"	f	class:SocketInputStream
+GetTail	SocketInputStream.h	/^    unsigned int GetTail() {$/;"	f	class:SocketInputStream
+IsEmpty	SocketInputStream.h	/^    bool IsEmpty()const {$/;"	f	class:SocketInputStream
+Size	SocketInputStream.h	/^    unsigned int Size()const {$/;"	f	class:SocketInputStream
+SocketInputStream	SocketInputStream.h	/^class SocketInputStream {$/;"	c
+m_Buffer	SocketInputStream.h	/^    char* m_Buffer;$/;"	m	class:SocketInputStream
+m_BufferLen	SocketInputStream.h	/^    unsigned int m_BufferLen;$/;"	m	class:SocketInputStream
+m_Head	SocketInputStream.h	/^    unsigned int m_Head;$/;"	m	class:SocketInputStream
+m_MaxBufferLen	SocketInputStream.h	/^    unsigned int m_MaxBufferLen;$/;"	m	class:SocketInputStream
+m_Tail	SocketInputStream.h	/^    unsigned int m_Tail;$/;"	m	class:SocketInputStream
+m_pSocket	SocketInputStream.h	/^    Socket* m_pSocket;$/;"	m	class:SocketInputStream
+CleanUp	SocketOutputStream.cpp	/^void SocketOutputStream::CleanUp() {$/;"	f	class:SocketOutputStream
+Flush	SocketOutputStream.cpp	/^unsigned int SocketOutputStream::Flush() {$/;"	f	class:SocketOutputStream
+Initsize	SocketOutputStream.cpp	/^void SocketOutputStream::Initsize() {$/;"	f	class:SocketOutputStream
+Length	SocketOutputStream.cpp	/^unsigned int SocketOutputStream::Length() const {$/;"	f	class:SocketOutputStream
+Resize	SocketOutputStream.cpp	/^bool SocketOutputStream::Resize(int size) {$/;"	f	class:SocketOutputStream
+SocketOutputStream	SocketOutputStream.cpp	/^SocketOutputStream::SocketOutputStream(Socket* sock, unsigned int BufferSize, unsigned int MaxBufferSize) {$/;"	f	class:SocketOutputStream
+Write	SocketOutputStream.cpp	/^unsigned int SocketOutputStream::Write(const char* buf, unsigned int len) {$/;"	f	class:SocketOutputStream
+~SocketOutputStream	SocketOutputStream.cpp	/^SocketOutputStream::~SocketOutputStream() {$/;"	f	class:SocketOutputStream
+CN_VICKY__SOCKETOUTPUTSTREAM_H	SocketOutputStream.h	10;"	d
+Capacity	SocketOutputStream.h	/^    int Capacity()const {$/;"	f	class:SocketOutputStream
+DEFAULTSOCKETOUTPUTBUFFERSIZE	SocketOutputStream.h	15;"	d
+DISCONNECTSOCKETOUTPUTSIZE	SocketOutputStream.h	17;"	d
+GetBuff	SocketOutputStream.h	/^    char* GetBuff() {$/;"	f	class:SocketOutputStream
+GetBuffLen	SocketOutputStream.h	/^    unsigned int GetBuffLen() {$/;"	f	class:SocketOutputStream
+GetBuffer	SocketOutputStream.h	/^    char* GetBuffer()const {$/;"	f	class:SocketOutputStream
+GetHead	SocketOutputStream.h	/^    unsigned int GetHead() {$/;"	f	class:SocketOutputStream
+GetTail	SocketOutputStream.h	/^    char* GetTail()const {$/;"	f	class:SocketOutputStream
+GetTail	SocketOutputStream.h	/^    unsigned int GetTail() {$/;"	f	class:SocketOutputStream
+IsEmpty	SocketOutputStream.h	/^    bool IsEmpty()const {$/;"	f	class:SocketOutputStream
+Size	SocketOutputStream.h	/^    unsigned int Size()const {$/;"	f	class:SocketOutputStream
+SocketOutputStream	SocketOutputStream.h	/^class SocketOutputStream {$/;"	c
+m_Buffer	SocketOutputStream.h	/^    char* m_Buffer;$/;"	m	class:SocketOutputStream
+m_BufferLen	SocketOutputStream.h	/^    unsigned int m_BufferLen;$/;"	m	class:SocketOutputStream
+m_Head	SocketOutputStream.h	/^    unsigned int m_Head;$/;"	m	class:SocketOutputStream
+m_MaxBufferLen	SocketOutputStream.h	/^    unsigned int m_MaxBufferLen;$/;"	m	class:SocketOutputStream
+m_Tail	SocketOutputStream.h	/^    unsigned int m_Tail;$/;"	m	class:SocketOutputStream
+m_pSocket	SocketOutputStream.h	/^    Socket* m_pSocket;$/;"	m	class:SocketOutputStream
+main	client.cpp	/^int main(void) {$/;"	f
+processRead	client.cpp	/^void processRead(Socket* sock, std::atomic<bool>* _flag) {$/;"	f
+processWrite	client.cpp	/^void processWrite(Socket* sock, std::atomic<bool>* _flag) {$/;"	f
+main	client2.cpp	/^int main(void) {$/;"	f
+main	main.cpp	/^int main(void) {$/;"	f
+processClientRead	main.cpp	/^ void processClientRead(SOCKET clientsock, std::atomic<bool>* _flag) {$/;"	f
+processClientWrite	main.cpp	/^void processClientWrite(SOCKET clientsock, std::atomic<bool>* _flag) {$/;"	f
+main	main3.cpp	/^int main(void) {$/;"	f
+AS	nbproject\Makefile-Debug.mk	/^AS=as$/;"	m
+ASFLAGS	nbproject\Makefile-Debug.mk	/^ASFLAGS=$/;"	m
+CC	nbproject\Makefile-Debug.mk	/^CC=gcc$/;"	m
+CCADMIN	nbproject\Makefile-Debug.mk	/^CCADMIN=CCadmin$/;"	m
+CCC	nbproject\Makefile-Debug.mk	/^CCC=g++$/;"	m
+CCFLAGS	nbproject\Makefile-Debug.mk	/^CCFLAGS=-std=c++11 -pthread$/;"	m
+CFLAGS	nbproject\Makefile-Debug.mk	/^CFLAGS=$/;"	m
+CND_BUILDDIR	nbproject\Makefile-Debug.mk	/^CND_BUILDDIR=build$/;"	m
+CND_CONF	nbproject\Makefile-Debug.mk	/^CND_CONF=Debug$/;"	m
+CND_DISTDIR	nbproject\Makefile-Debug.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DLIB_EXT	nbproject\Makefile-Debug.mk	/^CND_DLIB_EXT=so$/;"	m
+CND_PLATFORM	nbproject\Makefile-Debug.mk	/^CND_PLATFORM=GNU-Linux-x86$/;"	m
+CP	nbproject\Makefile-Debug.mk	/^CP=cp$/;"	m
+CXX	nbproject\Makefile-Debug.mk	/^CXX=g++$/;"	m
+CXXFLAGS	nbproject\Makefile-Debug.mk	/^CXXFLAGS=-std=c++11 -pthread$/;"	m
+FC	nbproject\Makefile-Debug.mk	/^FC=gfortran$/;"	m
+FFLAGS	nbproject\Makefile-Debug.mk	/^FFLAGS=$/;"	m
+GREP	nbproject\Makefile-Debug.mk	/^GREP=grep$/;"	m
+LDLIBSOPTIONS	nbproject\Makefile-Debug.mk	/^LDLIBSOPTIONS=$/;"	m
+MKDIR	nbproject\Makefile-Debug.mk	/^MKDIR=mkdir$/;"	m
+NM	nbproject\Makefile-Debug.mk	/^NM=nm$/;"	m
+OBJECTDIR	nbproject\Makefile-Debug.mk	/^OBJECTDIR=${CND_BUILDDIR}\/${CND_CONF}\/${CND_PLATFORM}$/;"	m
+OBJECTFILES	nbproject\Makefile-Debug.mk	/^OBJECTFILES= \\$/;"	m
+RANLIB	nbproject\Makefile-Debug.mk	/^RANLIB=ranlib$/;"	m
+AS	nbproject\Makefile-Release.mk	/^AS=as$/;"	m
+ASFLAGS	nbproject\Makefile-Release.mk	/^ASFLAGS=$/;"	m
+CC	nbproject\Makefile-Release.mk	/^CC=gcc$/;"	m
+CCADMIN	nbproject\Makefile-Release.mk	/^CCADMIN=CCadmin$/;"	m
+CCC	nbproject\Makefile-Release.mk	/^CCC=g++$/;"	m
+CCFLAGS	nbproject\Makefile-Release.mk	/^CCFLAGS=$/;"	m
+CFLAGS	nbproject\Makefile-Release.mk	/^CFLAGS=$/;"	m
+CND_BUILDDIR	nbproject\Makefile-Release.mk	/^CND_BUILDDIR=build$/;"	m
+CND_CONF	nbproject\Makefile-Release.mk	/^CND_CONF=Release$/;"	m
+CND_DISTDIR	nbproject\Makefile-Release.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DLIB_EXT	nbproject\Makefile-Release.mk	/^CND_DLIB_EXT=so$/;"	m
+CND_PLATFORM	nbproject\Makefile-Release.mk	/^CND_PLATFORM=GNU-Linux-x86$/;"	m
+CP	nbproject\Makefile-Release.mk	/^CP=cp$/;"	m
+CXX	nbproject\Makefile-Release.mk	/^CXX=g++$/;"	m
+CXXFLAGS	nbproject\Makefile-Release.mk	/^CXXFLAGS=$/;"	m
+FC	nbproject\Makefile-Release.mk	/^FC=gfortran$/;"	m
+FFLAGS	nbproject\Makefile-Release.mk	/^FFLAGS=$/;"	m
+GREP	nbproject\Makefile-Release.mk	/^GREP=grep$/;"	m
+LDLIBSOPTIONS	nbproject\Makefile-Release.mk	/^LDLIBSOPTIONS=$/;"	m
+MKDIR	nbproject\Makefile-Release.mk	/^MKDIR=mkdir$/;"	m
+NM	nbproject\Makefile-Release.mk	/^NM=nm$/;"	m
+OBJECTDIR	nbproject\Makefile-Release.mk	/^OBJECTDIR=${CND_BUILDDIR}\/${CND_CONF}\/${CND_PLATFORM}$/;"	m
+OBJECTFILES	nbproject\Makefile-Release.mk	/^OBJECTFILES= \\$/;"	m
+RANLIB	nbproject\Makefile-Release.mk	/^RANLIB=ranlib$/;"	m
+ALLCONFS	nbproject\Makefile-impl.mk	/^ALLCONFS=Debug Release $/;"	m
+BUILD_SUBPROJECTS	nbproject\Makefile-impl.mk	/^BUILD_SUBPROJECTS=${BUILD_SUBPROJECTS_${SUBPROJECTS}}$/;"	m
+BUILD_SUBPROJECTS_	nbproject\Makefile-impl.mk	/^BUILD_SUBPROJECTS_=.build-subprojects$/;"	m
+BUILD_SUBPROJECTS_NO	nbproject\Makefile-impl.mk	/^BUILD_SUBPROJECTS_NO=$/;"	m
+CLEAN_SUBPROJECTS	nbproject\Makefile-impl.mk	/^CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}$/;"	m
+CLEAN_SUBPROJECTS_	nbproject\Makefile-impl.mk	/^CLEAN_SUBPROJECTS_=.clean-subprojects$/;"	m
+CLEAN_SUBPROJECTS_NO	nbproject\Makefile-impl.mk	/^CLEAN_SUBPROJECTS_NO=$/;"	m
+CONF	nbproject\Makefile-impl.mk	/^CONF=${DEFAULTCONF}$/;"	m
+DEFAULTCONF	nbproject\Makefile-impl.mk	/^DEFAULTCONF=Debug$/;"	m
+PROJECTNAME	nbproject\Makefile-impl.mk	/^PROJECTNAME=socket$/;"	m
+SUBPROJECTS	nbproject\Makefile-impl.mk	/^SUBPROJECTS=${SUB_${SUB}}$/;"	m
+SUB_no	nbproject\Makefile-impl.mk	/^SUB_no=NO$/;"	m
+CND_ARTIFACT_DIR_Debug	nbproject\Makefile-variables.mk	/^CND_ARTIFACT_DIR_Debug=dist\/Debug\/GNU-Linux-x86$/;"	m
+CND_ARTIFACT_DIR_Release	nbproject\Makefile-variables.mk	/^CND_ARTIFACT_DIR_Release=dist\/Release\/GNU-Linux-x86$/;"	m
+CND_ARTIFACT_NAME_Debug	nbproject\Makefile-variables.mk	/^CND_ARTIFACT_NAME_Debug=socket$/;"	m
+CND_ARTIFACT_NAME_Release	nbproject\Makefile-variables.mk	/^CND_ARTIFACT_NAME_Release=socket$/;"	m
+CND_ARTIFACT_PATH_Debug	nbproject\Makefile-variables.mk	/^CND_ARTIFACT_PATH_Debug=dist\/Debug\/GNU-Linux-x86\/socket$/;"	m
+CND_ARTIFACT_PATH_Release	nbproject\Makefile-variables.mk	/^CND_ARTIFACT_PATH_Release=dist\/Release\/GNU-Linux-x86\/socket$/;"	m
+CND_BASEDIR	nbproject\Makefile-variables.mk	/^CND_BASEDIR=`pwd`$/;"	m
+CND_BUILDDIR	nbproject\Makefile-variables.mk	/^CND_BUILDDIR=build$/;"	m
+CND_DISTDIR	nbproject\Makefile-variables.mk	/^CND_DISTDIR=dist$/;"	m
+CND_PACKAGE_DIR_Debug	nbproject\Makefile-variables.mk	/^CND_PACKAGE_DIR_Debug=dist\/Debug\/GNU-Linux-x86\/package$/;"	m
+CND_PACKAGE_DIR_Release	nbproject\Makefile-variables.mk	/^CND_PACKAGE_DIR_Release=dist\/Release\/GNU-Linux-x86\/package$/;"	m
+CND_PACKAGE_NAME_Debug	nbproject\Makefile-variables.mk	/^CND_PACKAGE_NAME_Debug=socket.tar$/;"	m
+CND_PACKAGE_NAME_Release	nbproject\Makefile-variables.mk	/^CND_PACKAGE_NAME_Release=socket.tar$/;"	m
+CND_PACKAGE_PATH_Debug	nbproject\Makefile-variables.mk	/^CND_PACKAGE_PATH_Debug=dist\/Debug\/GNU-Linux-x86\/package\/socket.tar$/;"	m
+CND_PACKAGE_PATH_Release	nbproject\Makefile-variables.mk	/^CND_PACKAGE_PATH_Release=dist\/Release\/GNU-Linux-x86\/package\/socket.tar$/;"	m
+CND_PLATFORM_Debug	nbproject\Makefile-variables.mk	/^CND_PLATFORM_Debug=GNU-Linux-x86$/;"	m
+CND_PLATFORM_Release	nbproject\Makefile-variables.mk	/^CND_PLATFORM_Release=GNU-Linux-x86$/;"	m
+sh	nbproject\Makefile-variables.mk	/^ROOT:sh = test -f nbproject\/private\/Makefile-variables.mk || \\$/;"	m
+checkReturnCode	nbproject\Package-Debug.bash	/^function checkReturnCode$/;"	f
+copyFileToTmpDir	nbproject\Package-Debug.bash	/^function copyFileToTmpDir$/;"	f
+makeDirectory	nbproject\Package-Debug.bash	/^function makeDirectory$/;"	f
+checkReturnCode	nbproject\Package-Release.bash	/^function checkReturnCode$/;"	f
+copyFileToTmpDir	nbproject\Package-Release.bash	/^function copyFileToTmpDir$/;"	f
+makeDirectory	nbproject\Package-Release.bash	/^function makeDirectory$/;"	f
+main	server.cpp	/^int main(void) {$/;"	f
+processClientRead	server.cpp	/^void processClientRead(SOCKET clientsock, std::atomic<bool>* _flag) {$/;"	f
+processClientWrite	server.cpp	/^void processClientWrite(SOCKET clientsock, std::atomic<bool>* _flag) {$/;"	f
+main	server2.cpp	/^int main(void) {$/;"	f
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
