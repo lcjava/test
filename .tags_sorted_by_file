@@ -1,0 +1,212 @@
+array	OAuth2.0 Client\auth.php	/^	$array = $_POST;$/;"	v
+assoc	OAuth2.0 Client\auth.php	/^	$assoc = json_decode($result,true);$/;"	v
+code	OAuth2.0 Client\auth.php	/^	$code = $_GET['code'];$/;"	v
+http	OAuth2.0 Client\auth.php	/^	$http = new PPHTTP();$/;"	v
+result	OAuth2.0 Client\auth.php	/^	$result = $http->httppost('http:\/\/127.0.0.1\/oauth\/token.php',$array);$/;"	v
+array	OAuth2.0 Client\auth2.php	/^	$array = $_POST;$/;"	v
+http	OAuth2.0 Client\auth2.php	/^	$http = new PPHTTP();$/;"	v
+pjson	OAuth2.0 Client\auth2.php	/^	$pjson = base64_encode($result);$/;"	v
+result	OAuth2.0 Client\auth2.php	/^	$result = $http->httppost('http:\/\/127.0.0.1\/oauth\/userinfo_api.php',$array);$/;"	v
+token	OAuth2.0 Client\auth2.php	/^	$token = $_GET['token'];$/;"	v
+result	OAuth2.0 Client\auth3.php	/^	$result = base64_decode($_GET['result']);$/;"	v
+PPHTTP	OAuth2.0 Client\http.class.php	/^class PPHTTP {$/;"	c
+array2string	OAuth2.0 Client\http.class.php	/^	public function array2string($rearray = array('')){$/;"	f
+ch	OAuth2.0 Client\http.class.php	/^		$ch = curl_init() ;$/;"	v
+ch	OAuth2.0 Client\http.class.php	/^		$ch = curl_init();$/;"	v
+httpget	OAuth2.0 Client\http.class.php	/^	public function httpget($reurl='',$rearray=array('')) {$/;"	f
+httppost	OAuth2.0 Client\http.class.php	/^	public function httppost($reurl='',$rearray=array('')){$/;"	f
+key	OAuth2.0 Client\http.class.php	/^		foreach ($rearray as $key=>$value) {$/;"	v
+output	OAuth2.0 Client\http.class.php	/^		$output = curl_exec($ch);$/;"	v
+post_data	OAuth2.0 Client\http.class.php	/^		$post_data = $rearray;$/;"	v
+pre_string	OAuth2.0 Client\http.class.php	/^			$pre_string = $pre_string.$key.'='.$value.'&';$/;"	v
+pre_string	OAuth2.0 Client\http.class.php	/^		$pre_string = '';$/;"	v
+restring	OAuth2.0 Client\http.class.php	/^		$restring = $this->array2string($rearray);$/;"	v
+restring	OAuth2.0 Client\http.class.php	/^		$restring = substr($pre_string,0,strlen($pre_string)-1);$/;"	v
+appname	OAuth2.0 Server\addclient.php	/^  	$appname = trim($_POST['appname']);$/;"	v
+client_id	OAuth2.0 Server\addclient.php	/^  	$client_id = $oauth->getClientID($client_sec,$appname);$/;"	v
+client_sec	OAuth2.0 Server\addclient.php	/^  	$client_sec = client_secret_generate();$/;"	v
+oauth	OAuth2.0 Server\addclient.php	/^	$oauth = new PDOOAuth2();$/;"	v
+rurl	OAuth2.0 Server\addclient.php	/^	$rurl = trim($_POST['rurl']);$/;"	v
+oauth	OAuth2.0 Server\authorize.php	/^		$oauth = new PDOOAuth2();$/;"	v
+pass	OAuth2.0 Server\authorize.php	/^		$pass = trim($_POST['password']);$/;"	v
+result	OAuth2.0 Server\authorize.php	/^		$result = $oauth->ckUser($user, $pass);$/;"	v
+user	OAuth2.0 Server\authorize.php	/^		$user = trim($_POST['username']);$/;"	v
+OAUTH2_AUTH_RESPONSE_TYPE_ACCESS_TOKEN	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_AUTH_RESPONSE_TYPE_ACCESS_TOKEN", "token");$/;"	d
+OAUTH2_AUTH_RESPONSE_TYPE_AUTH_CODE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_AUTH_RESPONSE_TYPE_AUTH_CODE", "code");$/;"	d
+OAUTH2_AUTH_RESPONSE_TYPE_CODE_AND_TOKEN	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_AUTH_RESPONSE_TYPE_CODE_AND_TOKEN", "code-and-token");$/;"	d
+OAUTH2_AUTH_RESPONSE_TYPE_REGEXP	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_AUTH_RESPONSE_TYPE_REGEXP", "\/^(token|code|code-and-token)$\/");$/;"	d
+OAUTH2_CLIENT_ID_REGEXP	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_CLIENT_ID_REGEXP", "\/^[a-z0-9-_]{3,32}$\/i");$/;"	d
+OAUTH2_DEFAULT_ACCESS_TOKEN_LIFETIME	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_DEFAULT_ACCESS_TOKEN_LIFETIME", 3600);$/;"	d
+OAUTH2_DEFAULT_AUTH_CODE_LIFETIME	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_DEFAULT_AUTH_CODE_LIFETIME", 30);$/;"	d
+OAUTH2_DEFAULT_REFRESH_TOKEN_LIFETIME	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_DEFAULT_REFRESH_TOKEN_LIFETIME", 1209600);$/;"	d
+OAUTH2_ERROR_EXPIRED_TOKEN	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_EXPIRED_TOKEN", "expired_token");$/;"	d
+OAUTH2_ERROR_INSUFFICIENT_SCOPE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_INSUFFICIENT_SCOPE", "insufficient_scope");$/;"	d
+OAUTH2_ERROR_INVALID_CLIENT	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_INVALID_CLIENT", "invalid_client");$/;"	d
+OAUTH2_ERROR_INVALID_GRANT	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_INVALID_GRANT", "invalid_grant");$/;"	d
+OAUTH2_ERROR_INVALID_REQUEST	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_INVALID_REQUEST", "invalid_request");$/;"	d
+OAUTH2_ERROR_INVALID_SCOPE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_INVALID_SCOPE", "invalid_scope");$/;"	d
+OAUTH2_ERROR_INVALID_TOKEN	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_INVALID_TOKEN", "invalid_token");$/;"	d
+OAUTH2_ERROR_REDIRECT_URI_MISMATCH	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_REDIRECT_URI_MISMATCH", "redirect_uri_mismatch");$/;"	d
+OAUTH2_ERROR_UNAUTHORIZED_CLIENT	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_UNAUTHORIZED_CLIENT", "unauthorized_client");$/;"	d
+OAUTH2_ERROR_UNSUPPORTED_GRANT_TYPE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_UNSUPPORTED_GRANT_TYPE", "unsupported_grant_type");$/;"	d
+OAUTH2_ERROR_UNSUPPORTED_RESPONSE_TYPE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_UNSUPPORTED_RESPONSE_TYPE", "unsupported_response_type");$/;"	d
+OAUTH2_ERROR_USER_DENIED	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_ERROR_USER_DENIED", "access_denied");$/;"	d
+OAUTH2_GRANT_TYPE_ASSERTION	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_GRANT_TYPE_ASSERTION", "assertion");$/;"	d
+OAUTH2_GRANT_TYPE_AUTH_CODE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_GRANT_TYPE_AUTH_CODE", "authorization_code");$/;"	d
+OAUTH2_GRANT_TYPE_NONE	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_GRANT_TYPE_NONE", "none");$/;"	d
+OAUTH2_GRANT_TYPE_REFRESH_TOKEN	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_GRANT_TYPE_REFRESH_TOKEN", "refresh_token");$/;"	d
+OAUTH2_GRANT_TYPE_REGEXP	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_GRANT_TYPE_REGEXP", "\/^(authorization_code|password|assertion|refresh_token|none)$\/");$/;"	d
+OAUTH2_GRANT_TYPE_USER_CREDENTIALS	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_GRANT_TYPE_USER_CREDENTIALS", "password");$/;"	d
+OAUTH2_HTTP_BAD_REQUEST	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_HTTP_BAD_REQUEST", "400 Bad Request");$/;"	d
+OAUTH2_HTTP_FORBIDDEN	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_HTTP_FORBIDDEN", "403 Forbidden");$/;"	d
+OAUTH2_HTTP_FOUND	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_HTTP_FOUND", "302 Found");$/;"	d
+OAUTH2_HTTP_UNAUTHORIZED	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_HTTP_UNAUTHORIZED", "401 Unauthorized");$/;"	d
+OAUTH2_TOKEN_PARAM_NAME	OAuth2.0 Server\lib\OAuth2.inc.php	/^define("OAUTH2_TOKEN_PARAM_NAME", "oauth_token");$/;"	d
+OAuth2	OAuth2.0 Server\lib\OAuth2.inc.php	/^abstract class OAuth2 {$/;"	c
+__construct	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function __construct($config = array()) {$/;"	f
+auth_header	OAuth2.0 Server\lib\OAuth2.inc.php	/^      $auth_header = trim($auth_header);$/;"	v
+auth_header	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $auth_header = $this->getAuthorizationHeader();$/;"	v
+available_scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^      $available_scope = explode(" ", $available_scope);$/;"	v
+buildUri	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function buildUri($uri, $params) {$/;"	f
+checkAssertion	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function checkAssertion($client_id, $assertion_type, $assertion) {$/;"	f
+checkClientCredentials	OAuth2.0 Server\lib\OAuth2.inc.php	/^  abstract protected function checkClientCredentials($client_id, $client_secret = NULL);$/;"	f
+checkNoneAccess	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function checkNoneAccess($client_id) {$/;"	f
+checkRestrictedAuthResponseType	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function checkRestrictedAuthResponseType($client_id, $response_type) {$/;"	f
+checkRestrictedGrantType	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function checkRestrictedGrantType($client_id, $grant_type) {$/;"	f
+checkScope	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function checkScope($required_scope, $available_scope) {$/;"	f
+checkUserCredentials	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function checkUserCredentials($client_id, $username, $password) {$/;"	f
+client	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $client = $this->getClientCredentials();$/;"	v
+client_secret	OAuth2.0 Server\lib\OAuth2.inc.php	/^  abstract protected function checkClientCredentials($client_id, $client_secret = NULL);$/;"	v
+code	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $code = $this->genAuthCode();$/;"	v
+conf	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected $conf = array();$/;"	v
+createAccessToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function createAccessToken($client_id, $uid, $scope = NULL) {$/;"	f
+createAuthCode	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function createAuthCode($client_id, $redirect_uri, $uid, $scope = NULL) {$/;"	f
+default	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function getVariable($name, $default = NULL) {$/;"	v
+doRedirectUriCallback	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function doRedirectUriCallback($redirect_uri, $params) {$/;"	f
+errorDoRedirectUriCallback	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function errorDoRedirectUriCallback($redirect_uri, $error, $error_description = NULL, $error_uri = NULL, $state = NULL) {$/;"	f
+errorJsonResponse	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function errorJsonResponse($http_status_code, $error, $error_description = NULL, $error_uri = NULL) {$/;"	f
+errorWWWAuthenticateResponseHeader	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function errorWWWAuthenticateResponseHeader($http_status_code, $realm, $error, $error_description = NULL, $error_uri = NULL, $scope = NULL) {$/;"	f
+error_description	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function errorDoRedirectUriCallback($redirect_uri, $error, $error_description = NULL, $error_uri = NULL, $state = NULL) {$/;"	v
+error_description	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function errorJsonResponse($http_status_code, $error, $error_description = NULL, $error_uri = NULL) {$/;"	v
+error_description	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function errorWWWAuthenticateResponseHeader($http_status_code, $realm, $error, $error_description = NULL, $error_uri = NULL, $scope = NULL) {$/;"	v
+exit_not_present	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function verifyAccessToken($scope = NULL, $exit_not_present = TRUE, $exit_invalid = TRUE, $exit_expired = TRUE, $exit_scope = TRUE, $realm = NULL) {$/;"	v
+filters	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $filters = array($/;"	v
+finishClientAuthorization	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function finishClientAuthorization($is_authorized, $uid, $params = array()) {$/;"	f
+for	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * Implementing classes may need to override this function for use on$/;"	f
+genAccessToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function genAccessToken() {$/;"	f
+genAuthCode	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function genAuthCode() {$/;"	f
+getAccessToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  abstract protected function getAccessToken($oauth_token);$/;"	f
+getAccessTokenParams	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function getAccessTokenParams() {$/;"	f
+getAuthCode	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getAuthCode($code) {$/;"	f
+getAuthorizationHeader	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function getAuthorizationHeader() {$/;"	f
+getAuthorizeParams	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function getAuthorizeParams() {$/;"	f
+getClientCredentials	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getClientCredentials() {$/;"	f
+getDefaultAuthenticationRealm	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getDefaultAuthenticationRealm() {$/;"	f
+getRedirectUri	OAuth2.0 Server\lib\OAuth2.inc.php	/^  abstract protected function getRedirectUri($client_id);$/;"	f
+getRefreshToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getRefreshToken($refresh_token) {$/;"	f
+getSupportedAuthResponseTypes	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getSupportedAuthResponseTypes() {$/;"	f
+getSupportedGrantTypes	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getSupportedGrantTypes() {$/;"	f
+getSupportedScopes	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function getSupportedScopes() {$/;"	f
+getVariable	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function getVariable($name, $default = NULL) {$/;"	f
+grantAccessToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function grantAccessToken() {$/;"	f
+headers	OAuth2.0 Server\lib\OAuth2.inc.php	/^      $headers = apache_request_headers();$/;"	v
+input	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $input = filter_input_array(INPUT_GET, $filters);$/;"	v
+input	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $input = filter_input_array(INPUT_POST, $filters);$/;"	v
+k	OAuth2.0 Server\lib\OAuth2.inc.php	/^    foreach ($params as $k => $v) {$/;"	v
+name	OAuth2.0 Server\lib\OAuth2.inc.php	/^    foreach ($config as $name => $value) {$/;"	v
+params	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function finishClientAuthorization($is_authorized, $uid, $params = array()) {$/;"	v
+parse_url	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $parse_url = parse_url($uri);$/;"	v
+realm	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $realm = $realm === NULL ? $this->getDefaultAuthenticationRealm() : $realm;$/;"	v
+redirect_uri	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $redirect_uri = $this->getRedirectUri($input["client_id"]);$/;"	v
+required_scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^      $required_scope = explode(" ", $required_scope);$/;"	v
+response_type	OAuth2.0 Server\lib\OAuth2.inc.php	/^      if ($response_type == OAUTH2_AUTH_RESPONSE_TYPE_ACCESS_TOKEN || $response_type == OAUTH2_AUTH_RESPONSE_TYPE_CODE_AND_TOKEN)$/;"	v
+response_type	OAuth2.0 Server\lib\OAuth2.inc.php	/^      if ($response_type == OAUTH2_AUTH_RESPONSE_TYPE_AUTH_CODE || $response_type == OAUTH2_AUTH_RESPONSE_TYPE_CODE_AND_TOKEN)$/;"	v
+result	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $result = "WWW-Authenticate: OAuth realm='" . $realm . "'";$/;"	v
+return	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * If you want to support scope use, then have this function return a list$/;"	f
+scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^  abstract protected function setAccessToken($oauth_token, $client_id, $expires, $uid, $scope = NULL);$/;"	v
+scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function createAuthCode($client_id, $redirect_uri, $uid, $scope = NULL) {$/;"	v
+scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function createAccessToken($client_id, $uid, $scope = NULL) {$/;"	v
+scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function setAuthCode($code, $client_id, $redirect_uri, $expires, $uid, $scope = NULL) {$/;"	v
+scope	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function setRefreshToken($refresh_token, $client_id, $expires, $scope = NULL) {$/;"	v
+sendJsonHeaders	OAuth2.0 Server\lib\OAuth2.inc.php	/^  private function sendJsonHeaders() {$/;"	f
+setAccessToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  abstract protected function setAccessToken($oauth_token, $client_id, $expires, $uid, $scope = NULL);$/;"	f
+setAuthCode	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function setAuthCode($code, $client_id, $redirect_uri, $expires, $uid, $scope = NULL) {$/;"	f
+setRefreshToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function setRefreshToken($refresh_token, $client_id, $expires, $scope = NULL) {$/;"	f
+setVariable	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function setVariable($name, $value) {$/;"	f
+should	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * This function should be the storage counterpart to getAuthCode().$/;"	f
+should	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * This function should be the storage counterpart to getRefreshToken().$/;"	f
+stored	OAuth2.0 Server\lib\OAuth2.inc.php	/^        $stored = $this->checkAssertion($client[0], $input["assertion_type"], $input["assertion"]);$/;"	v
+stored	OAuth2.0 Server\lib\OAuth2.inc.php	/^        $stored = $this->checkNoneAccess($client[0]);$/;"	v
+stored	OAuth2.0 Server\lib\OAuth2.inc.php	/^        $stored = $this->checkUserCredentials($client[0], $input["username"], $input["password"]);$/;"	v
+stored	OAuth2.0 Server\lib\OAuth2.inc.php	/^        $stored = $this->getAuthCode($input["code"]);$/;"	v
+stored	OAuth2.0 Server\lib\OAuth2.inc.php	/^        $stored = $this->getRefreshToken($input["refresh_token"]);$/;"	v
+to	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * Implement this function to grab the stored URI for a given client id.$/;"	f
+to	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * Implementing classes may want to override these function to implement$/;"	f
+to	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * authorization server should call this function to redirect the user$/;"	f
+token	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $token = $this->createAccessToken($client[0], $stored["uid"], $input["scope"]);$/;"	v
+token	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $token = $this->getAccessToken($token_param);$/;"	v
+token	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $token = array($/;"	v
+token_param	OAuth2.0 Server\lib\OAuth2.inc.php	/^    $token_param = $this->getAccessTokenParams();$/;"	v
+unsetRefreshToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  protected function unsetRefreshToken($refresh_token) {$/;"	f
+used	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * Internal function used to get the client credentials from HTTP basic$/;"	f
+verifyAccessToken	OAuth2.0 Server\lib\OAuth2.inc.php	/^  public function verifyAccessToken($scope = NULL, $exit_not_present = TRUE, $exit_invalid = TRUE, $exit_expired = TRUE, $exit_scope = TRUE, $realm = NULL) {$/;"	f
+with	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * You should override this function with something, or else your OAuth$/;"	f
+with	OAuth2.0 Server\lib\OAuth2.inc.php	/^   * You should override this function with your supported response types.$/;"	f
+PDOOAuth2	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^class PDOOAuth2 extends OAuth2 {$/;"	c
+__construct	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  public function __construct() {$/;"	f
+__destruct	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  function __destruct() {$/;"	f
+addClient	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  public function addClient($appname, $client_secret, $redirect_uri) {$/;"	f
+checkClientCredentials	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function checkClientCredentials($client_id, $client_secret = NULL) {$/;"	f
+ckUser	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^	public function ckUser($username,$password) {$/;"	f
+client_secret	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function checkClientCredentials($client_id, $client_secret = NULL) {$/;"	v
+db	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $this->db = new PDO(PDO_DSN, PDO_USER, PDO_PASS);$/;"	v
+db	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^    $this->db = NULL; \/\/ Release db connection$/;"	v
+db	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  private $db;$/;"	v
+getAccessToken	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function getAccessToken($oauth_token) {$/;"	f
+getAuthCode	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function getAuthCode($code) {$/;"	f
+getClientID	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^	public function getClientID($client_sec,$appname) {$/;"	f
+getRedirectUri	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function getRedirectUri($client_id) {$/;"	f
+getSupportedGrantTypes	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function getSupportedGrantTypes() {$/;"	f
+getUserInfo	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^	public function getUserInfo($oauth_token) {$/;"	f
+handleException	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  private function handleException($e) {$/;"	f
+result	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^			$result = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+result	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $result = $stmt->fetch(PDO::FETCH_ASSOC);$/;"	v
+result_json	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^			$result_json = json_encode($result);$/;"	v
+scope	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function setAccessToken($oauth_token, $client_id, $expires, $uid, $scope = NULL) {$/;"	v
+scope	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function setAuthCode($code, $client_id, $redirect_uri, $expires, $uid, $scope = NULL) {$/;"	v
+setAccessToken	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function setAccessToken($oauth_token, $client_id, $expires, $uid, $scope = NULL) {$/;"	f
+setAuthCode	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^  protected function setAuthCode($code, $client_id, $redirect_uri, $expires, $uid, $scope = NULL) {$/;"	f
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^		    $sql = "SELECT `email`,`phone`,`img` FROM `user` WHERE `uid` = :uid";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^	      	$sql = "SELECT `password`,`uid` FROM `user` WHERE `username` = :username";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^	      	$sql = "SELECT `uid` FROM `tokens` WHERE `oauth_token` = :oauth_token";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "INSERT INTO auth_codes (code, client_id, redirect_uri, expires, uid, scope) VALUES (:code, :client_id, :redirect_uri, :expires, :uid, :scope)";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "INSERT INTO clients (appname, client_secret, redirect_uri) VALUES (:appname, :client_secret, :redirect_uri)";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "INSERT INTO tokens (oauth_token, client_id, expires, uid, scope) VALUES (:oauth_token, :client_id, :expires, :uid, :scope)";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "SELECT `client_id` FROM `clients` WHERE `client_secret` = :client_sec AND `appname` = :appname ";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "SELECT client_id, expires, scope FROM tokens WHERE oauth_token = :oauth_token";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "SELECT client_secret FROM clients WHERE client_id = :client_id";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "SELECT code, client_id, redirect_uri, expires, uid, scope FROM auth_codes WHERE code = :code";$/;"	v
+sql	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $sql = "SELECT redirect_uri FROM clients WHERE client_id = :client_id";$/;"	v
+stmt	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^			$stmt = $this->db->prepare($sql);$/;"	v
+stmt	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^      $stmt = $this->db->prepare($sql);$/;"	v
+to	OAuth2.0 Server\lib\PDOOAuth2.inc.php	/^   * Little helper function to add a new client to the database.$/;"	f
+OAuth_DIR	OAuth2.0 Server\lib\conn.inc.php	/^define("OAuth_DIR", dirname(dirname(__FILE__)));$/;"	d
+PDO_DSN	OAuth2.0 Server\lib\conn.inc.php	/^define("PDO_DSN", "mysql:dbname=test;host=localhost");$/;"	d
+PDO_PASS	OAuth2.0 Server\lib\conn.inc.php	/^define("PDO_PASS", "usbw");$/;"	d
+PDO_USER	OAuth2.0 Server\lib\conn.inc.php	/^define("PDO_USER", "root");$/;"	d
+client_secret_generate	OAuth2.0 Server\lib\func.inc.php	/^function client_secret_generate () {$/;"	f
+i	OAuth2.0 Server\lib\func.inc.php	/^	$i=0;$/;"	v
+k1	OAuth2.0 Server\lib\func.inc.php	/^		$k1 = $k1.$rnd[rand(0,61)];$/;"	v
+k1	OAuth2.0 Server\lib\func.inc.php	/^	$k1 = '';$/;"	v
+load_view	OAuth2.0 Server\lib\func.inc.php	/^function load_view($view='',$array=array()) {$/;"	f
+rnd	OAuth2.0 Server\lib\func.inc.php	/^		$rnd = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'; $/;"	v
+oauth	OAuth2.0 Server\token.php	/^$oauth = new PDOOAuth2();$/;"	v
+oauth	OAuth2.0 Server\userinfo_api.php	/^$oauth = new PDOOAuth2();$/;"	v
+result	OAuth2.0 Server\userinfo_api.php	/^	$result = $oauth->getUserInfo($_POST['oauth_token']);$/;"	v
+status	OAuth2.0 Server\userinfo_api.php	/^$status = $oauth->verifyAccessToken();$/;"	v
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
