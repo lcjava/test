@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dsdsdsdsd
 =================
 
@@ -77,3 +78,6 @@ Copyright 2011 SINA, Inc.
 Copyright 2011 SAE
 
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+=======
+sdfsdf
+>>>>>>> 1ddd771d5b1be6fbdc54f3bd24f2bfb62792e91e
